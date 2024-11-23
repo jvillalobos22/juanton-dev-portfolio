@@ -1,0 +1,23 @@
+.homeIntroImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+
+  img {
+    width: 130%;
+    max-width: 130%;
+  }
+}
+
+.socialLinks {
+  padding: 0.25rem 0;
+  a svg {
+    font-size: 28px;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,101 +1,172 @@
 import Image from "next/image";
+import styles from "./home.module.scss";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import { Button } from "@mui/material";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-wrap">
+      <main className="w-full flex flex-nowrap justify-center mt-20 px-3">
+        <div className="max-w-screen-md">
+          <header className="body-content">
+            <h1 className="mb-4">Hold tight, portfolio site in progress...</h1>
+            <p>Just one more git commit... or twenty</p>
+          </header>
+          <section className="body-content mt-20">
+            <h2>Hi, I&apos;m Juan Villalobos aka @JuantonMusic 👋</h2>
+            <p>
+              I&apos;m a Lead Software Engineer with over a decade of experience
+              crafting web applications and guiding development teams to
+              success.
+            </p>
+            <aside className="mb-5">
+              <div className={styles.homeIntroImage}>
+                <Image
+                  src="/images/headshot-square-1.png"
+                  alt="Headshot image of Juan Villalobos"
+                  width={1080}
+                  height={1080}
+                  priority
+                />
+              </div>
+              <span className="mb-0">
+                <em>Lead Software Engineer @ IBM</em>
+              </span>
+              <br />
+              <span className="mb-0">@juantonmusic</span>
+              <div className={styles.socialLinks}>
+                <a href="#">
+                  <YouTubeIcon />
+                </a>
+                <a href="#">
+                  <LinkedInIcon />
+                </a>
+                <a href="#">
+                  <MailOutlineIcon />
+                </a>
+              </div>
+            </aside>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <p>
+              When I&apos;m not leading development teams or architecting web
+              applications, you&apos;ll find me sharing my passion for software
+              engineering with the developer community. With over a decade of
+              experience in JavaScript, React.js, and Node.js, I&apos;ve
+              discovered that the best design and code is a reflection of our
+              personal life stories – and I&apos;m here to help you share yours.
+            </p>
+
+            <div className="mt-20">
+              <h3>Beyond the Code</h3>
+              <ul>
+                <li>
+                  <strong>Music & Tech:</strong> Tech House DJ and producer,
+                  bringing rhythm to both code and music
+                </li>
+                <li>
+                  <strong>Sports Coaching:</strong> High school Wrestling and
+                  Golf coach, passionate about mentoring youth
+                </li>
+                <li>
+                  <strong>Community Builder:</strong> Bringing people together
+                  through tech, sports, and music
+                </li>
+                <li>
+                  <strong>Multi-disciplined:</strong> Applying lessons from the
+                  golf course and DJ booth to software engineering
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Core Values</h3>
+              <ul>
+                <li>
+                  <FavoriteIcon color="primary" />
+                  &nbsp;Mentor at Heart
+                </li>
+                <li>
+                  <MenuBookIcon color="secondary" />
+                  &nbsp;Lifelong Learner
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section className="body-content mt-20">
+            <h2>What&apos;s Coming?</h2>
+
+            <article>
+              <h3>Technical Excellence</h3>
+              <p>
+                Witness software craftsmanship in action through a portfolio
+                that&apos;s not just a showcase, but a testament to modern
+                development practices and my core development values.
+              </p>
+            </article>
+
+            <article>
+              <h3>Interactive Storytelling</h3>
+              <p>
+                Experience projects through immersive narratives that reveal the
+                journey, decisions, and learning behind each development
+                milestone.
+              </p>
+            </article>
+
+            <article>
+              <h3>Journey Together</h3>
+              <p>
+                Let&apos;s grow together as I share insights from real-world
+                experiences leading development teams and conducting design
+                workshops.
+              </p>
+            </article>
+          </section>
+          <section className="mt-20">
+            <h2>Stay Connected</h2>
+            <p>
+              Don&apos;t miss the launch! Subscribe to my newsletter for weekly
+              insights on JavaScript, React.js, and enterprise development
+              practices.
+            </p>
+
+            <div className="mt-5">
+              <ul className="flex flex-wrap md:flex-nowrap md:justify-between">
+                <li className="w-full mb-3 md:w-1/2 md:pr-2">
+                  <Button
+                    className="w-full mb-3"
+                    href="https://mailchi.mp/f5a5cde72458/frontend-development-with-juanton"
+                    variant="contained"
+                  >
+                    Subscribe to Newsletter
+                  </Button>
+                </li>
+                <li className="w-full mb-3 md:w-1/2 md:pl-2">
+                  <Button
+                    className="w-full mb-3"
+                    href="https://www.youtube.com/@juantonmusic"
+                    variant="contained"
+                    color="secondary"
+                  >
+                    Follow on YouTube
+                  </Button>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className="w-full flex flex-nowrap justify-center mt-20 mb-32">
+        <p>
+          <em>Development in Progress</em>
+        </p>
       </footer>
     </div>
   );
-}
+};
+
+export default Home;

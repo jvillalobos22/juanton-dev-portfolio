@@ -14,8 +14,93 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: #0a0a0a;
+    --background: #ededed;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Domine", Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 59.72px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 49.77px;
+}
+
+h3 {
+  font-size: 41.47px;
+}
+
+h4 {
+  font-size: 34.56px;
+}
+
+h5 {
+  font-size: 28.8px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.small {
+  font-size: 16.67px;
+}
+
+.smallest {
+  font-size: 13.89px;
+}
+
+.body-content p {
+  margin-bottom: 1rem;
+}
+
+.body-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.body-content h3 {
+  margin-bottom: 1.375rem;
+}
+
+.body-content h4 {
+  margin-bottom: 1.25rem;
+}
+
+.body-content h5 {
+  margin-bottom: 1.125rem;
+}
+
+.body-content h6 {
+  margin-bottom: 1rem;
+}
+
+.body-content li {
+  margin-bottom: 1rem;
 }
