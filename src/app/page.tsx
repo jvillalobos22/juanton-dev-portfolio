@@ -6,15 +6,51 @@ import { Button } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+import classNames from "classnames";
 
 const Home = () => {
   return (
     <div className="flex flex-wrap">
-      <main className="w-full flex flex-nowrap justify-center mt-20 px-3">
-        <div className="max-w-screen-md">
+      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-3">
+        <aside className="mb-5 max-w-min lg:max-w-min lg:mr-16 w-full">
+          <div
+            className={classNames(
+              styles.homeImageColumnContainer,
+              "lg:sticky lg:top-20"
+            )}
+          >
+            <div className={styles.homeIntroImage}>
+              <Image
+                src="/images/headshot-square-1.png"
+                alt="Headshot image of Juan Villalobos"
+                width={1080}
+                height={1080}
+                priority
+              />
+            </div>
+            <span className="mb-0 w-full">
+              <em>Lead Software Engineer @ IBM</em>
+            </span>
+            <br />
+            <span className="mb-0 w-full">@juantonmusic</span>
+            <div className={styles.socialLinks}>
+              <a href="#">
+                <YouTubeIcon />
+              </a>
+              <a href="#">
+                <LinkedInIcon />
+              </a>
+              <a href="#">
+                <MailOutlineIcon />
+              </a>
+            </div>
+          </div>
+        </aside>
+        <div className="max-w-screen-md flex flex-wrap">
           <header className="body-content">
             <h1 className="mb-4">Hold tight, portfolio site in progress...</h1>
-            <p>Just one more git commit... or twenty</p>
+            <p>Just one more git commit... maybe two... or twenty 😅</p>
           </header>
           <section className="body-content mt-20">
             <h2>Hi, I&apos;m Juan Villalobos aka @JuantonMusic 👋</h2>
@@ -23,41 +59,14 @@ const Home = () => {
               crafting web applications and guiding development teams to
               success.
             </p>
-            <aside className="mb-5">
-              <div className={styles.homeIntroImage}>
-                <Image
-                  src="/images/headshot-square-1.png"
-                  alt="Headshot image of Juan Villalobos"
-                  width={1080}
-                  height={1080}
-                  priority
-                />
-              </div>
-              <span className="mb-0">
-                <em>Lead Software Engineer @ IBM</em>
-              </span>
-              <br />
-              <span className="mb-0">@juantonmusic</span>
-              <div className={styles.socialLinks}>
-                <a href="#">
-                  <YouTubeIcon />
-                </a>
-                <a href="#">
-                  <LinkedInIcon />
-                </a>
-                <a href="#">
-                  <MailOutlineIcon />
-                </a>
-              </div>
-            </aside>
-
             <p>
               When I&apos;m not leading development teams or architecting web
               applications, you&apos;ll find me sharing my passion for software
               engineering with the developer community. With over a decade of
               experience in JavaScript, React.js, and Node.js, I&apos;ve
-              discovered that the best design and code is a reflection of our
-              personal life stories – and I&apos;m here to help you share yours.
+              discovered that the best designed applications and codebases are a
+              reflection of our personal life stories – and I&apos;m here to
+              help you share yours.
             </p>
 
             <div className="mt-20">
@@ -86,12 +95,16 @@ const Home = () => {
               <h3>Core Values</h3>
               <ul>
                 <li>
-                  <FavoriteIcon color="primary" />
+                  <FavoriteIcon color="primary" className="mb-1" />
                   &nbsp;Mentor at Heart
                 </li>
                 <li>
-                  <MenuBookIcon color="secondary" />
+                  <MenuBookIcon color="secondary" className="mb-1" />
                   &nbsp;Lifelong Learner
+                </li>
+                <li>
+                  <LiveHelpIcon color="primary" className="mb-1" />
+                  &nbsp;Endless Curiosity
                 </li>
               </ul>
             </div>
@@ -131,7 +144,9 @@ const Home = () => {
             <p>
               Don&apos;t miss the launch! Subscribe to my newsletter for weekly
               insights on JavaScript, React.js, and enterprise development
-              practices.
+              practices. I also put out videos and live streams on my design and
+              development progress for this portfolio site if you would like to
+              follow along.
             </p>
 
             <div className="mt-5">
@@ -141,8 +156,9 @@ const Home = () => {
                     className="w-full mb-3"
                     href="https://mailchi.mp/f5a5cde72458/frontend-development-with-juanton"
                     variant="contained"
+                    color="secondary"
                   >
-                    Subscribe to Newsletter
+                    Subscribe to my Newsletter
                   </Button>
                 </li>
                 <li className="w-full mb-3 md:w-1/2 md:pl-2">
@@ -150,9 +166,8 @@ const Home = () => {
                     className="w-full mb-3"
                     href="https://www.youtube.com/@juantonmusic"
                     variant="contained"
-                    color="secondary"
                   >
-                    Follow on YouTube
+                    Follow along on YouTube
                   </Button>
                 </li>
               </ul>

@@ -10,14 +10,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #fdf9f9;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --foreground: #0a0a0a;
-    --background: #ededed;
+    --background: #fdf9f9;
   }
 }
 
@@ -26,7 +26,7 @@ body {
   background: var(--background);
   font-family: "Domine", Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.618;
 }
 
 h1,
@@ -101,6 +101,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.body-content ul {
+  margin-bottom: 1.75rem;
+}
+
 .body-content li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
