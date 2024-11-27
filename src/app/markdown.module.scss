@@ -1,0 +1,17 @@
+.markdownContent {
+    li {
+        list-style: disc;
+    }
+
+    ul {
+        padding-left: 2rem;
+    }
+
+    h2 { 
+        margin-top: 8rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

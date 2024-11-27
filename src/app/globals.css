@@ -4,12 +4,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1915;
+  --primary: #bd2d2d;
+  --secondary: #2dbdbd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1915;
     --foreground: #fdf9f9;
   }
 }
@@ -25,7 +27,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Domine", Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   line-height: 1.618;
 }
 
@@ -41,40 +43,40 @@ h6 {
 }
 
 h1 {
-  font-size: 59.72px;
+  font-size: 3.7325rem; /* 59.72px */
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 49.77px;
+  font-size: 3.11rem; /* 49.77px */
 }
 
 h3 {
-  font-size: 41.47px;
+  font-size: 2.591875rem; /* 41.47px */
 }
 
 h4 {
-  font-size: 34.56px;
+  font-size: 2.16rem; /* 34.56px */
 }
 
 h5 {
-  font-size: 28.8px;
+  font-size: 1.8rem; /* 28.8px */
 }
 
 h6 {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 
 .small {
-  font-size: 16.67px;
+  font-size: 1.04rem; /* 16.67px */
 }
 
 .smallest {
-  font-size: 13.89px;
+  font-size: 0.868rem; /* 13.89px */
 }
 
 .body-content p {
@@ -107,4 +109,8 @@ p {
 
 .body-content li {
   margin-bottom: 0.75rem;
+}
+
+.body-content a:not(.MuiButton-root) {
+  color: var(--primary);
 }

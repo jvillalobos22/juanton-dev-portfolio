@@ -1,29 +1,54 @@
 import Image from "next/image";
 import styles from "./home.module.scss";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import MenuBookIcon from "@mui/icons-material/MenuBook";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
+// import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { Button } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+// import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import classNames from "classnames";
+import { getListOfPosts, getPageContent } from "@/utils/contentHelper";
+// import BlogIndex from "../../components/BlogIndex";
+import ReactMarkdown from "react-markdown";
+import markdownStyles from "./markdown.module.scss";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio of Juan Villalobos | Coming Soon",
+};
 
 const Home = () => {
+  const posts = getListOfPosts();
+  console.log(posts);
+
+  const { content } = getPageContent("home");
+  console.log(content);
+
   return (
     <div className="flex flex-wrap">
-      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-3">
-        <aside className="mb-5 max-w-min lg:max-w-min lg:mr-16 w-full">
+      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-5">
+        <aside className="mb-5 max-w-min lg:max-w-min lg:mx-16 w-full">
           <div
             className={classNames(
               styles.homeImageColumnContainer,
               "lg:sticky lg:top-20"
             )}
           >
-            <div className={styles.homeIntroImage}>
+            <div className="relative">
+              <div className={styles.homeIntroImage}>
+                <Image
+                  src="/images/headshot-square-1-transparent.png"
+                  alt="Headshot image of Juan Villalobos"
+                  width={1080}
+                  height={1080}
+                  priority
+                />
+              </div>
               <Image
-                src="/images/headshot-square-1.png"
-                alt="Headshot image of Juan Villalobos"
+                src="/images/brushstroke-square-1.png"
+                alt="Brush stroke image"
+                className={styles.homeImageStroke}
                 width={1080}
                 height={1080}
                 priority
@@ -33,16 +58,35 @@ const Home = () => {
               <em>Lead Software Engineer @ IBM</em>
             </span>
             <br />
+            <span className="mb-0 w-full">San Francisco, CA</span>
             <span className="mb-0 w-full">@juantonmusic</span>
             <div className={styles.socialLinks}>
-              <a href="#">
-                <YouTubeIcon />
+              <a
+                href="https://www.youtube.com/@juantonmusic"
+                target="_blank"
+                rel="nofollower"
+                title="YouTube Channel Link for Learning with Juanton"
+                aria-label="YouTube Channel Link for Learning with Juanton"
+              >
+                <YouTubeIcon alt="YouTube Channel Link for Learning with Juanton" />
               </a>
-              <a href="#">
-                <LinkedInIcon />
+              <a
+                href="https://www.linkedin.com/in/juanavillalobos/"
+                target="_blank"
+                rel="nofollower"
+                title="Linkedin Link for Juan Villalobos"
+                aria-label="Linkedin Link for Juan Villalobos"
+              >
+                <LinkedInIcon alt="Linkedin Link for Juan Villalobos" />
               </a>
-              <a href="#">
-                <MailOutlineIcon />
+              <a
+                href="mailto:juan@juantonmusic.com"
+                target="_blank"
+                rel="nofollower"
+                title="Linkedin Link for Juan Villalobos"
+                aria-label="Linkedin Link for Juan Villalobos"
+              >
+                <MailOutlineIcon alt="Email Juan Villalobos" />
               </a>
             </div>
           </div>
@@ -53,7 +97,10 @@ const Home = () => {
             <p>Just one more git commit... maybe two... or twenty 😅</p>
           </header>
           <section className="body-content mt-20">
-            <h2>Hi, I&apos;m Juan Villalobos aka @JuantonMusic 👋</h2>
+            <ReactMarkdown className={markdownStyles.markdownContent}>
+              {content}
+            </ReactMarkdown>
+            {/* <h2>Hi, I&apos;m Juan Villalobos aka @JuantonMusic 👋</h2>
             <p>
               I&apos;m a Lead Software Engineer with over a decade of experience
               crafting web applications and guiding development teams to
@@ -68,7 +115,6 @@ const Home = () => {
               reflection of our personal life stories – and I&apos;m here to
               help you share yours.
             </p>
-
             <div className="mt-20">
               <h3>Beyond the Code</h3>
               <ul>
@@ -107,9 +153,9 @@ const Home = () => {
                   &nbsp;Endless Curiosity
                 </li>
               </ul>
-            </div>
+            </div> */}
           </section>
-          <section className="body-content mt-20">
+          {/* <section className="body-content mt-20">
             <h2>What&apos;s Coming?</h2>
 
             <article>
@@ -138,8 +184,8 @@ const Home = () => {
                 workshops.
               </p>
             </article>
-          </section>
-          <section className="mt-20">
+          </section> */}
+          <section className="mt-20 body-content">
             <h2>Stay Connected</h2>
             <p>
               Don&apos;t miss the launch! Subscribe to my newsletter for weekly
@@ -149,7 +195,7 @@ const Home = () => {
               follow along.
             </p>
 
-            <div className="mt-5">
+            <div className="mt-10">
               <ul className="flex flex-wrap md:flex-nowrap md:justify-between">
                 <li className="w-full mb-3 md:w-1/2 md:pr-2">
                   <Button
@@ -157,6 +203,8 @@ const Home = () => {
                     href="https://mailchi.mp/f5a5cde72458/frontend-development-with-juanton"
                     variant="contained"
                     color="secondary"
+                    target="_blank"
+                    rel="nofollower"
                   >
                     Subscribe to my Newsletter
                   </Button>
@@ -166,6 +214,8 @@ const Home = () => {
                     className="w-full mb-3"
                     href="https://www.youtube.com/@juantonmusic"
                     variant="contained"
+                    target="_blank"
+                    rel="nofollower"
                   >
                     Follow along on YouTube
                   </Button>
