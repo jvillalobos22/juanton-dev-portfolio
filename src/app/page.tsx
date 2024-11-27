@@ -68,7 +68,7 @@ const Home = () => {
                 title="YouTube Channel Link for Learning with Juanton"
                 aria-label="YouTube Channel Link for Learning with Juanton"
               >
-                <YouTubeIcon alt="YouTube Channel Link for Learning with Juanton" />
+                <YouTubeIcon />
               </a>
               <a
                 href="https://www.linkedin.com/in/juanavillalobos/"
@@ -77,7 +77,7 @@ const Home = () => {
                 title="Linkedin Link for Juan Villalobos"
                 aria-label="Linkedin Link for Juan Villalobos"
               >
-                <LinkedInIcon alt="Linkedin Link for Juan Villalobos" />
+                <LinkedInIcon />
               </a>
               <a
                 href="mailto:juan@juantonmusic.com"
@@ -86,7 +86,7 @@ const Home = () => {
                 title="Linkedin Link for Juan Villalobos"
                 aria-label="Linkedin Link for Juan Villalobos"
               >
-                <MailOutlineIcon alt="Email Juan Villalobos" />
+                <MailOutlineIcon />
               </a>
             </div>
           </div>

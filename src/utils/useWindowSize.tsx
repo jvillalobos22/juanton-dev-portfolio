@@ -2,8 +2,12 @@
 
 import { useState, useEffect } from "react";
 
+interface IWindowSize {
+  width?: number;
+  height?: number;
+}
 const useWindowSize = () => {
-  const [windowSize, setWindowSize] = useState({
+  const [windowSize, setWindowSize] = useState<IWindowSize>({
     width: undefined,
     height: undefined,
   });

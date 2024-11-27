@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=169698145106:domainName=juanvillalobos.me:region=us-west-1": {
+    "Id": "/hostedzone/Z07042461SN107TDN0T1A",
+    "Name": "juanvillalobos.me."
+  },
+  "hosted-zone:account=169698145106:domainName=juanvillalobos.me:region=us-east-1": {
+    "Id": "/hostedzone/Z07042461SN107TDN0T1A",
+    "Name": "juanvillalobos.me."
+  }
+}

@@ -11,14 +11,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Open Sans",
-  },
-  overrides: {
-    MuiCssBaseline: {
-      "@global": {
-        "@font-face": ["Open Sans", "Domine"],
-      },
-    },
+    fontFamily: ["Open Sans", "Domine"].join(","),
   },
   components: {
     MuiButton: {
