@@ -1,5 +1,3 @@
-// helpers/contentHelpers.js
-
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";

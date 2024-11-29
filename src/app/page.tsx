@@ -1,15 +1,11 @@
 import Image from "next/image";
 import styles from "./home.module.scss";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { Button } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-// import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import classNames from "classnames";
-import { getListOfPosts, getPageContent } from "@/utils/contentHelper";
-// import BlogIndex from "../../components/BlogIndex";
+import { getPageContent } from "@/utils/contentHelper";
 import ReactMarkdown from "react-markdown";
 import markdownStyles from "./markdown.module.scss";
 import { Metadata } from "next";
@@ -19,11 +15,7 @@ export const metadata: Metadata = {
 };
 
 const Home = () => {
-  const posts = getListOfPosts();
-  console.log(posts);
-
   const { content } = getPageContent("home");
-  console.log(content);
 
   return (
     <div className="flex flex-wrap">
@@ -100,44 +92,7 @@ const Home = () => {
             <ReactMarkdown className={markdownStyles.markdownContent}>
               {content}
             </ReactMarkdown>
-            {/* <h2>Hi, I&apos;m Juan Villalobos aka @JuantonMusic 👋</h2>
-            <p>
-              I&apos;m a Lead Software Engineer with over a decade of experience
-              crafting web applications and guiding development teams to
-              success.
-            </p>
-            <p>
-              When I&apos;m not leading development teams or architecting web
-              applications, you&apos;ll find me sharing my passion for software
-              engineering with the developer community. With over a decade of
-              experience in JavaScript, React.js, and Node.js, I&apos;ve
-              discovered that the best designed applications and codebases are a
-              reflection of our personal life stories – and I&apos;m here to
-              help you share yours.
-            </p>
-            <div className="mt-20">
-              <h3>Beyond the Code</h3>
-              <ul>
-                <li>
-                  <strong>Music & Tech:</strong> Tech House DJ and producer,
-                  bringing rhythm to both code and music
-                </li>
-                <li>
-                  <strong>Sports Coaching:</strong> High school Wrestling and
-                  Golf coach, passionate about mentoring youth
-                </li>
-                <li>
-                  <strong>Community Builder:</strong> Bringing people together
-                  through tech, sports, and music
-                </li>
-                <li>
-                  <strong>Multi-disciplined:</strong> Applying lessons from the
-                  golf course and DJ booth to software engineering
-                </li>
-              </ul>
-            </div>
-
-            <div>
+            {/* <div>
               <h3>Core Values</h3>
               <ul>
                 <li>
@@ -155,36 +110,6 @@ const Home = () => {
               </ul>
             </div> */}
           </section>
-          {/* <section className="body-content mt-20">
-            <h2>What&apos;s Coming?</h2>
-
-            <article>
-              <h3>Technical Excellence</h3>
-              <p>
-                Witness software craftsmanship in action through a portfolio
-                that&apos;s not just a showcase, but a testament to modern
-                development practices and my core development values.
-              </p>
-            </article>
-
-            <article>
-              <h3>Interactive Storytelling</h3>
-              <p>
-                Experience projects through immersive narratives that reveal the
-                journey, decisions, and learning behind each development
-                milestone.
-              </p>
-            </article>
-
-            <article>
-              <h3>Journey Together</h3>
-              <p>
-                Let&apos;s grow together as I share insights from real-world
-                experiences leading development teams and conducting design
-                workshops.
-              </p>
-            </article>
-          </section> */}
           <section className="mt-20 body-content">
             <h2>Stay Connected</h2>
             <p>
