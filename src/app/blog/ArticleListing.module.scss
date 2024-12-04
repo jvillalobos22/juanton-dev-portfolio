@@ -1,0 +1,14 @@
+.articleTags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    display: inline-flex;
+  }
+}
+
+.articleImage {
+  border-radius: 5px;
+  border-color: var(--border-color);
+}

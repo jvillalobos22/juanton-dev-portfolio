@@ -1,9 +1,14 @@
 ---
 title: This is a Markdown file
-date: 2023-10-01
+date: 2024-12-04T12:00:00Z
 tags:
-  - markdown
-  - blog
+  - React
+  - Frontend
+  - TDD
+  - JavaScript
+summary: As a seasoned frontend developer, I've learned that success in React development isn't just about knowing the latest hooks or optimization techniques. It's about following core principles that consistently lead to better code, happier teams, and more maintainable applications. Here are the three laws I live by when building React applications.
+author: Juan Villalobos
+banner: 3-react-laws.png
 ---
 
 # 3 Unbreakable React Development Laws I Live By

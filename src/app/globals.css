@@ -18,6 +18,19 @@
   --primary-700: #b62238;
   --primary-800: #911b2e;
   --primary-900: #741625;
+
+  --gray-50: #fafafa;
+  --gray-100: #ededed;
+  --gray-200: #d4d4d3;
+  --gray-300: #bcbcbb;
+  --gray-400: #a4a4a2;
+  --gray-500: #8b8b89;
+  --gray-600: #72726f;
+  --gray-700: #5f5f5c;
+  --gray-800: #4b4b48;
+  --gray-900: #3b3b38;
+
+  --border-color: var(--gray-400);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,4 +137,13 @@ p {
 
 .body-content a:not(.MuiButton-root) {
   color: var(--primary);
+}
+
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6 {
+  color: var(--foreground);
 }

@@ -6,11 +6,14 @@ tags:
   - markdown
   - images
   - links
+summary: The syntax shown below assumes a file called _logo.png_ will be rendered by a Next.js app with the file in question stored in...
+author: Juan Villalobos
+banner: example-3.png
 ---
 
 ## Adding images
 
-The syntax shown below assumes a file called *logo.png* will be rendered by a Next.js app with the file in question stored in the `public/images` folder.
+The syntax shown below assumes a file called _logo.png_ will be rendered by a Next.js app with the file in question stored in the `public/images` folder.
 
 ![example image](/public/images/logo.png)
 
