@@ -6,6 +6,11 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import markdownStyles from "../../markdown.module.scss";
+import ArticleContent from "./ArticleContent";
+
+interface IPostProps {
+  params: Object;
+}
 
 export async function generateStaticParams() {
   const posts = getListOfPosts();
@@ -20,42 +25,17 @@ export async function generateStaticParams() {
   }));
 }
 
-function Post({ params }) {
+const PostPage = ({ params }): IPostProps => {
   const content = getPostContent(params.slug);
   console.log("params", params.slug);
   console.log("content", content);
   return (
     <div className="flex flex-wrap">
-      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-5">
-        <div className="max-w-screen-md flex flex-wrap">
-          <ReactMarkdown
-            className={markdownStyles.markdownContent}
-            components={{
-              code({ inline, className, children, ...props }) {
-                const match = /language-(\w+)/.exec(className || "");
-
-                return !inline && match ? (
-                  <SyntaxHighlighter
-                    {...props}
-                    children={String(children).replace(/\n$/, "")}
-                    style={a11yDark}
-                    language={match[1]}
-                    PreTag="div"
-                  />
-                ) : (
-                  <code {...props} className={className}>
-                    {children}
-                  </code>
-                );
-              },
-            }}
-          >
-            {content.content}
-          </ReactMarkdown>
-        </div>
+      <main className="w-full flex flex-wrap justify-center">
+        <ArticleContent postData={content.data} postContent={content.content} />
       </main>
     </div>
   );
-}
+};
 
-export default Post;
+export default PostPage;

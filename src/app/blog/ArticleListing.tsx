@@ -1,19 +1,11 @@
 import { getListOfPosts } from "@/utils/contentHelper";
-import styles from "./ArticleListing.module.scss";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Chip, Stack } from "@mui/material";
 import classNames from "classnames";
-
-interface IPostData {
-  title: string;
-  date: Date;
-  tags: string[];
-  summary: string;
-  author: string;
-  banner: string;
-}
+import { IPostData } from "@/interface/posts";
+import styles from "./ArticleListing.module.scss";
 
 interface IArticleListingProps {
   postContent: string;
@@ -21,7 +13,11 @@ interface IArticleListingProps {
   postData: IPostData;
 }
 
-const ArticleListing = ({ postContent, postData, slug }) => {
+const ArticleListing = ({
+  postContent,
+  postData,
+  slug,
+}): IArticleListingProps => {
   console.log("postContent", postContent);
   const { banner, title, summary, author, tags } = postData;
   return (
