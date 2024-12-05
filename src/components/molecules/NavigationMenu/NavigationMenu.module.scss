@@ -1,0 +1,15 @@
+.navigationMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  li {
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+  

@@ -1,23 +1,22 @@
 import { getListOfPosts, getPostContent } from "@/utils/contentHelper";
-// import ReactMarkdown from "react-markdown";
-// import markdownStyles from "./markdown.module.scss";
 import { Metadata } from "next";
 import Link from "next/link";
 import ArticleListing from "./ArticleListing";
+import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 
 export const metadata: Metadata = {
   title: "Portfolio of Juan Villalobos | Coming Soon",
 };
 
-const Home = () => {
+const BlogPage = () => {
   const posts = getListOfPosts();
-  console.log("posts", posts);
 
   return (
     <div className="flex flex-wrap">
+      <SiteNavigation />
       <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-8 md:px-16">
         <div className="max-w-screen-xl xl:max-w-screen-2xl flex flex-wrap w-full">
-          <section className="body-content mt-20 grid lg:grid-cols-8 lg:gap-12">
+          <section className="body-content grid lg:grid-cols-8 lg:gap-12">
             <div className="lg:col-span-2 border-b lg:border-r lg:border-b lg:pr-8">
               <h1>
                 Code
@@ -52,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default BlogPage;

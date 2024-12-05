@@ -1,0 +1,13 @@
+.navigationItem {
+  height: min-content;
+  
+  a {
+    padding: 0.25em 0.5em;
+    height: min-content;
+    border-radius: var(--menu-item-border-radius);
+    
+    &:hover, &:focus, &:active {
+      background-color: var(--menu-item-hover-color)
+    }
+  }
+}

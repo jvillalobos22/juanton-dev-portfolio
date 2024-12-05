@@ -3,7 +3,6 @@
 import ReactMarkdown from "react-markdown";
 import { getListOfPosts, getPostContent } from "@/utils/contentHelper";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-// import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import markdownStyles from "../../markdown.module.scss";
 import ArticleContent from "./ArticleContent";
@@ -14,7 +13,6 @@ interface IPostProps {
 
 export async function generateStaticParams() {
   const posts = getListOfPosts();
-  console.log(posts);
 
   if (!posts || posts.length === 0) {
     return [{ slug: "not-found" }];

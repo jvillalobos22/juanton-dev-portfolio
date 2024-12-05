@@ -9,6 +9,7 @@ import { getPageContent } from "@/utils/contentHelper";
 import ReactMarkdown from "react-markdown";
 import markdownStyles from "./markdown.module.scss";
 import { Metadata } from "next";
+import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 
 export const metadata: Metadata = {
   title: "Portfolio of Juan Villalobos | Coming Soon",
@@ -19,6 +20,8 @@ const Home = () => {
 
   return (
     <div className="flex flex-wrap">
+      <SiteNavigation />
+
       <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-5">
         <aside className="mb-5 max-w-min lg:max-w-min lg:mx-16 w-full">
           <div
