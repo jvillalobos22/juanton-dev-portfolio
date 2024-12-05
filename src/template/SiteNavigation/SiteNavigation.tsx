@@ -16,6 +16,15 @@ const SiteNavigation = ({}): ISiteNavigationProps => {
             <Link href="/">
               <Image
                 src="/images/juanton-logo-black.png"
+                className={styles.lightModeImage}
+                alt="Juanton Logo"
+                width={3300}
+                height={2550}
+                priority
+              />
+              <Image
+                src="/images/juanton-logo-white.png"
+                className={styles.darkModeImage}
                 alt="Juanton Logo"
                 width={3300}
                 height={2550}

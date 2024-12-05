@@ -18,3 +18,18 @@
     align-items: center;
   }
 }
+
+.lightModeImage {
+  display: block;
+
+  @media (prefers-color-scheme: dark) {
+    display: none;
+  }
+}
+
+.darkModeImage {
+  display: none;
+  @media (prefers-color-scheme: dark) {
+    display: block;
+  }
+}

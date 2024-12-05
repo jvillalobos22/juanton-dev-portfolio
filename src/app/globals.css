@@ -43,6 +43,17 @@
   :root {
     --background: #1a1915;
     --foreground: #fdf9f9;
+    --menu-item-hover-color: var(--primary-600);
+  }
+
+  ::selection {
+    background: rgb(from var(--primary-700) r g b / 0.75);
+    text-shadow: none;
+  }
+
+  ::-moz-selection {
+    background: rgb(from var(--primary-700) r g b / 0.75);
+    text-shadow: none;
   }
 }
 
@@ -51,13 +62,26 @@
     --foreground: #0a0a0a;
     --background: #fdf9f9;
   }
+
+  ::selection {
+    background: rgb(from var(--primary-300) r g b / 0.75);
+    text-shadow: none;
+  }
+  ::-moz-selection {
+    background: rgb(from var(--primary-300) r g b / 0.75);
+    text-shadow: none;
+  }
+}
+
+html {
+  font-size: 20px;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--serif-font);
-  font-size: 1.25rem; /* 20px */
+  font-size: 1rem; /* 20px */
   line-height: 1.618;
 }
 
@@ -72,41 +96,44 @@ h6 {
   font-weight: 800;
 }
 
+h1.giantHeading {
+  font-size: 5.61rem; /* 112.2px */
+}
 h1 {
-  font-size: 3.7325rem; /* 59.72px */
+  font-size: 2.99rem; /* 59.72px */
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 3.11rem; /* 49.77px */
+  font-size: 2.49rem; /* 49.77px */
 }
 
 h3 {
-  font-size: 2.591875rem; /* 41.47px */
+  font-size: 2.07rem; /* 41.47px */
 }
 
 h4 {
-  font-size: 2.16rem; /* 34.56px */
+  font-size: 1.73rem; /* 34.56px */
 }
 
 h5 {
-  font-size: 1.8rem; /* 28.8px */
+  font-size: 1.44rem; /* 28.8px */
 }
 
 h6 {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.2rem; /* 24px */
 }
 
 p {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1rem; /* 20px */
 }
 
 .small {
-  font-size: 1.04rem; /* 16.67px */
+  font-size: 0.83rem; /* 16.67px */
 }
 
 .smallest {
-  font-size: 0.868rem; /* 13.89px */
+  font-size: 0.69rem; /* 13.89px */
 }
 
 .body-content p {

@@ -7,7 +7,7 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    borderColor: "#000000",
+    borderColor: "#3e3e3e",
     extend: {
       colors: {
         background: "var(--background)",
