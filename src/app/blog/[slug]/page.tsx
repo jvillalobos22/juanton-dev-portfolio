@@ -6,6 +6,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import markdownStyles from "../../markdown.module.scss";
 import ArticleContent from "./ArticleContent";
+import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 
 interface IPostProps {
   params: Object;
@@ -25,10 +26,10 @@ export async function generateStaticParams() {
 
 const PostPage = ({ params }): IPostProps => {
   const content = getPostContent(params.slug);
-  console.log("params", params.slug);
-  console.log("content", content);
+
   return (
     <div className="flex flex-wrap">
+      <SiteNavigation />
       <main className="w-full flex flex-wrap justify-center">
         <ArticleContent postData={content.data} postContent={content.content} />
       </main>

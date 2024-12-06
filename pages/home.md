@@ -4,6 +4,8 @@ I'm a Lead Software Engineer who bridges the gap between design thinking and tec
 
 When I'm not facilitating design workshops or architecting component systems, you'll find me sharing my approach to efficient development practices with the developer community. I believe the best applications emerge when we blend technical expertise with thoughtful design processes. Through my experience developing enterprise cloud platforms for healthcare providers, educational institutions, and government agencies, I've refined the art of building scalable frontend architectures that empower both users and developers. My focus is on creating unified design systems and efficient development workflows that help teams deliver exceptional user experiences at scale.
 
+---
+
 ## Beyond the Code
 
 - **Music Production and DJing:** The origin of [@JuantonMusic](https://juantonmusic.com) – From 2016-2021, I was a producer and DJ of Tech House music in San Francisco and Oakland's underground scene, performing in clubs across the city and Northern California music festivals. Music production and DJing remain central to my creative expression outside of work, reflecting my passion for crafting experiences that move people. While my main focus has always been software design and development, that same drive for creativity fuels both my music and my approach to design. Want to hear my sound? Check out [juantonmusic.com](https://juantonmusic.com).
@@ -11,6 +13,8 @@ When I'm not facilitating design workshops or architecting component systems, yo
 - **Community Building & Coaching:** Since 2021, I've been coaching wrestling and golf at local high schools, embracing another way to give back to my community. Whether I'm helping athletes master new techniques or guiding developers through complex problems, I believe in paying it forward and investing in our community's next generation of leaders. This commitment to bringing people together—whether through sports, tech, or music—shapes everything I do, from coaching to leading development teams.
 
 - **Serial Hobbyist & Lifelong Learner:** I've always been driven by an insatiable curiosity and desire to master new skills. From perfecting my golf swing to crafting homemade pizza dough, from producing music to learning Spanish, I dive deep into everything that captures my interest. This passion for learning traces back to my skateboarding days as a kid, where I learned that progress comes through persistence—falling down, getting up, and trying again. Whether I'm in the kitchen experimenting with bread baking, watching football, or tackling a new coding challenge, I bring the same enthusiasm and dedication to mastering the craft. It's not just about collecting hobbies; it's about the journey of continuous growth and the joy of discovering new passions.
+
+---
 
 ## Core Values
 
@@ -23,6 +27,8 @@ When I'm not facilitating design workshops or architecting component systems, yo
 - **Resilience Through Practice:** My skateboarding days taught me that mastery comes through countless attempts and learning from failure. This mindset of persistent improvement drives my approach to both personal and professional challenges.
 
 - **Authentic Leadership:** I lead by example, bringing my whole self to everything I do. Whether I'm in the DJ booth or facilitating design workshops, I believe in creating genuine connections and inspiring others to find their path.
+
+---
 
 ## Current Role: Squad Leader at IBM
 
@@ -57,6 +63,8 @@ Leading high-performing development teams at IBM, I balance technical excellence
 - Validate market fit and ROI through continuous stakeholder engagement
 - Lead hypothesis validation and canvas definition sessions
 - Transform complex requirements into scalable technical solutions
+
+---
 
 ## Project Timeline
 
@@ -95,6 +103,8 @@ Built from the ground up, a platform that revolutionized how dental students are
 - Architected real-time clinical grading interface
 - Implemented comprehensive competency tracking system
 - **Tech Stack:** React, JavaScript
+
+---
 
 ## Not just another portfolio site: My design and development process revealed
 

@@ -9,11 +9,11 @@ interface INavigationMenuProps {}
 const NavigationMenu = ({}): INavigationMenuProps => {
   return (
     <ul className={styles.navigationMenu}>
-      <NavigationItem href="projects">Projects</NavigationItem>
-      <NavigationItem href="blog">Blog</NavigationItem>
-      <NavigationItem href="skills">Skills</NavigationItem>
-      <NavigationItem href="about">About</NavigationItem>
-      <NavigationItem href="contact">Contact</NavigationItem>
+      <NavigationItem href="/projects">Projects</NavigationItem>
+      <NavigationItem href="/blog">Blog</NavigationItem>
+      <NavigationItem href="/skills">Skills</NavigationItem>
+      <NavigationItem href="/about">About</NavigationItem>
+      <NavigationItem href="/contact">Contact</NavigationItem>
     </ul>
   );
 };

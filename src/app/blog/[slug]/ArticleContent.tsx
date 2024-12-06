@@ -21,7 +21,7 @@ const ArticleContent = ({ postData, postContent }): IArticleContentProps => {
   return (
     <>
       <div className="w-full flex flex-wrap justify-center">
-        <div className="max-w-screen-lg flex flex-wrap mt-32 mb-16">
+        <div className="max-w-screen-lg flex flex-wrap mt-20 mb-16">
           <Image
             src={`/images/articles/${banner}`}
             alt="Brush stroke image"

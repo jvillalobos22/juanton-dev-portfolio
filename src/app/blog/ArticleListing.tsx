@@ -33,7 +33,12 @@ const ArticleListing = ({
       <div className={styles.articleTags}>
         <Stack direction="row" spacing={1} className="mt-4">
           {tags.map((tag) => (
-            <Chip label={tag} color="secondary" className="mr-2 text-xs" />
+            <Chip
+              key={tag}
+              label={tag}
+              color="secondary"
+              className="mr-2 text-xs"
+            />
           ))}
         </Stack>
       </div>

@@ -31,10 +31,12 @@
   --gray-900: #3b3b38;
 
   --border-color: var(--gray-200);
+  --border-radius: 5px;
+  --border-radius-lg: 10px;
 
   --body-text-anchor-color: var(--primary-800);
   --menu-item-hover-color: var(--primary-200);
-  --menu-item-border-radius: 5px;
+  --menu-item-border-radius: (--border-radius);
 
   --sans-serif-font: "Open Sans", Helvetica, sans-serif;
   --serif-font: "Domine", Georgia, "Times New Roman", Times, serif;
