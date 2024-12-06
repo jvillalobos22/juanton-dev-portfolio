@@ -32,6 +32,7 @@
 
   --border-color: var(--gray-400);
 
+  --body-text-anchor-color: var(--primary-800);
   --menu-item-hover-color: var(--primary-200);
   --menu-item-border-radius: 5px;
 
@@ -44,6 +45,7 @@
     --background: #1a1915;
     --foreground: #fdf9f9;
     --menu-item-hover-color: var(--primary-600);
+    --body-text-anchor-color: var(--primary-200);
   }
 
   ::selection {
@@ -169,7 +171,7 @@ p {
 }
 
 .body-content a:not(.MuiButton-root) {
-  color: var(--primary);
+  color: var(--body-text-anchor-color);
 }
 
 a h1,

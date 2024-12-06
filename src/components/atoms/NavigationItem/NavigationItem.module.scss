@@ -4,6 +4,10 @@
   a {
     padding: 0.25em 0.5em;
     height: min-content;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--menu-item-border-radius);
     
     &:hover, &:focus, &:active {
