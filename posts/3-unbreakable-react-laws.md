@@ -1,5 +1,5 @@
 ---
-title: This is a Markdown file
+title: 3 Core Principles of Software Development
 date: 2024-12-04T12:00:00Z
 tags:
   - React
@@ -11,11 +11,11 @@ author: Juan Villalobos
 banner: 3-react-laws.png
 ---
 
-# 3 Unbreakable React Development Laws I Live By
+# 3 Core Principles of Software Development
 
-As a seasoned frontend developer, I've learned that success in React development isn't just about knowing the latest hooks or optimization techniques. It's about following core principles that consistently lead to better code, happier teams, and more maintainable applications. Here are the three laws I live by when building React applications.
+As a seasoned frontend developer, I've learned that success in frontend development isn't just about knowing the latest React hooks or optimization techniques. It's about following core principles that consistently lead to better code, happier teams, and more maintainable applications. Here are the three core principles I live by when building applications.
 
-## Law #1: Embrace True Test-Driven Development (TDD)
+## Principle #1: Embrace True Test-Driven Development (TDD)
 
 "Oh yeah, TDD is great... but who actually practices it?"
 
@@ -103,7 +103,9 @@ The most overlooked step is refactoring. After each green test, ask yourself:
 
 This constant refinement leads to more readable code, better component reusability, a trustworthy component library, and faster future development.
 
-## Law #2: Embrace Atomic Component Design
+---
+
+## Principle #2: Embrace Atomic Component Design
 
 The second law is all about component composition and organization. Think small, think focused, think reusable.
 
@@ -129,7 +131,9 @@ Your components should be deletable. Yes, you read that right. You should be abl
 - Keep functions small and focused (Single Responsibility Principle)
 - Move shared types, constants, and helpers to dedicated files
 
-## Law #3: Master Modern Frontend Fundamentals - Beyond Basic HTML & CSS
+---
+
+## Principle #3: Master Modern Frontend Fundamentals - Beyond Basic HTML & CSS
 
 The final law might raise some eyebrows. In an era where it seems like a new JavaScript framework drops every week, I'm here to tell you that mastering HTML and CSS is more critical than ever. I've seen too many React developers dive deep into hooks and state management while treating HTML and CSS as afterthoughts. Trust me, this is a recipe for disaster.
 
@@ -272,6 +276,8 @@ $spacing-unit: 8px;
 Remember: Writing good CSS isn't about memorizing every property and value. It's about understanding the principles and knowing which tools to reach for. I've seen developers waste hours fighting with CSS when a simple utility class or preprocessor mixin would have solved their problem in minutes.
 
 Think of yourself as a master craftsperson. Yes, you need to know how to use your tools, but more importantly, you need to know when to use them. Sometimes a simple `display: flex` is all you need. Other times, you'll want to leverage the power of CSS Grid for complex layouts. The key is understanding the fundamentals deeply enough to make these decisions confidently.
+
+---
 
 ## Conclusion
 
