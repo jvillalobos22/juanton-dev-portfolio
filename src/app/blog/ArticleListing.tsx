@@ -38,7 +38,7 @@ const ArticleListing = ({
         </Stack>
       </div>
       <Link href={`blog/${slug}`}>
-        <h2>{title}</h2>
+        <h2 className="h4 mt-2 mb-2">{title}</h2>
       </Link>
       <p>{summary}</p>
     </article>
