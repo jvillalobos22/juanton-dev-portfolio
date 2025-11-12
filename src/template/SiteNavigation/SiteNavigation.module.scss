@@ -16,6 +16,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    li:first-child {
+      margin-right: 1rem;
+    }
   }
 }
 

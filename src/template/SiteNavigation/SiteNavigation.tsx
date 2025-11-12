@@ -35,9 +35,7 @@ const SiteNavigation = ({}): ISiteNavigationProps => {
           <nav className={styles.siteNavigationMenu}>
             <NavigationMenu />
             <ul>
-              <NavigationItem href="#" className="mr-2">
-                Resume
-              </NavigationItem>
+              <NavigationItem href="#">Resume</NavigationItem>
               <li>
                 <Button
                   className="w-full mb-3"
