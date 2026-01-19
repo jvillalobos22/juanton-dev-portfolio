@@ -3,35 +3,34 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import markdownStyles from "../../markdown.module.scss";
-// import { Metadata } from "next";
 import Image from "next/image";
-// import Link from "next/link";
-// import { Chip, Stack } from "@mui/material";
 import classNames from "classnames";
-import { IPostData } from "@/interface/posts";
-import styles from "./ArticleContent.module.scss";
+import { IProjectData } from "@/interface/projects";
+import styles from "./ProjectContent.module.scss";
 
-interface IArticleContentProps {
-  postData: IPostData;
-  postContent: string;
+interface IProjectContentProps {
+  projectData: IProjectData;
+  projectContent: string;
 }
 
-const ArticleContent = ({ postData, postContent }): IArticleContentProps => {
-  const { banner, title, summary, author, tags } = postData;
+const ProjectContent = ({ projectData, projectContent }): IProjectContentProps => {
+  const { banner, title, summary } = projectData;
   return (
     <>
-      <div className="w-full flex flex-wrap justify-center">
-        <div className="max-w-screen-lg flex flex-wrap mb-16">
-          <Image
-            src={`/images/articles/${banner}`}
-            alt="Brush stroke image"
-            width={2240}
-            height={1260}
-            priority
-            className={classNames("border", styles.articleImage)}
-          />
+      {banner && (
+        <div className="w-full flex flex-wrap justify-center">
+          <div className="max-w-screen-lg flex flex-wrap mb-16">
+            <Image
+              src={`/images/projects/${banner}`}
+              alt={`${title} project banner`}
+              width={2240}
+              height={1260}
+              priority
+              className={classNames("border", styles.projectImage)}
+            />
+          </div>
         </div>
-      </div>
+      )}
       <div className="max-w-screen-md flex flex-wrap">
         <ReactMarkdown
           className={markdownStyles.markdownContent}
@@ -55,11 +54,12 @@ const ArticleContent = ({ postData, postContent }): IArticleContentProps => {
             },
           }}
         >
-          {postContent}
+          {projectContent}
         </ReactMarkdown>
       </div>
     </>
   );
 };
 
-export default ArticleContent;
+export default ProjectContent;
+

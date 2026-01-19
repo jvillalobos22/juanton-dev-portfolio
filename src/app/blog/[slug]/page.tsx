@@ -30,7 +30,7 @@ const PostPage = ({ params }): IPostProps => {
   return (
     <div className="flex flex-wrap">
       <SiteNavigation />
-      <main className="w-full flex flex-wrap justify-center">
+      <main className="w-full flex flex-wrap justify-center mt-20 mb-20">
         <ArticleContent postData={content.data} postContent={content.content} />
       </main>
     </div>

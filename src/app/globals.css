@@ -35,8 +35,9 @@
   --border-radius-lg: 10px;
 
   --body-text-anchor-color: var(--primary-800);
+  --body-text-anchor-hover-color: var(--primary-900);
   --menu-item-hover-color: var(--primary-200);
-  --menu-item-border-radius: (--border-radius);
+  --menu-item-border-radius: var(--border-radius);
 
   --sans-serif-font: "Open Sans", Helvetica, sans-serif;
   --serif-font: "Domine", Georgia, "Times New Roman", Times, serif;
@@ -48,6 +49,7 @@
     --foreground: #fdf9f9;
     --menu-item-hover-color: var(--primary-600);
     --body-text-anchor-color: var(--primary-200);
+    --body-text-anchor-hover-color: var(--primary-400);
     --border-color: var(--gray-700);
   }
 
@@ -181,6 +183,10 @@ p {
 
 .body-content a:not(.MuiButton-root) {
   color: var(--body-text-anchor-color);
+}
+
+.body-content a:not(.MuiButton-root):hover {
+  color: var(--body-text-anchor-hover-color);
 }
 
 a h1,

@@ -1,0 +1,15 @@
+.projectTags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    display: inline-flex;
+  }
+}
+
+.projectImage {
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+}
+

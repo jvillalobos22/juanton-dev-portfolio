@@ -14,7 +14,7 @@ const BlogPage = () => {
   return (
     <div className="flex flex-wrap">
       <SiteNavigation />
-      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 px-5 md:px-8">
+      <main className="w-full flex flex-wrap lg:flex-nowrap justify-center mt-20 mb-20 px-5 md:px-8">
         <div className="max-w-screen-xl xl:max-w-screen-2xl flex flex-wrap w-full">
           <section className="grid lg:grid-cols-8 lg:gap-12">
             <div className="lg:col-span-2 border-b lg:border-r lg:border-b-0 lg:pr-8 mb-8 lg:mb-0">
