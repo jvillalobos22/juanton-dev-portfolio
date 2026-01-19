@@ -17,7 +17,7 @@ interface IArticleContentProps {
 }
 
 const ArticleContent = ({ postData, postContent }): IArticleContentProps => {
-  const { banner, title, summary, author, tags } = postData;
+  const { banner } = postData;
   return (
     <>
       <div className="w-full flex flex-wrap justify-center">

@@ -1,5 +1,5 @@
-import { getListOfPosts } from "@/utils/contentHelper";
-import { Metadata } from "next";
+// import { getListOfPosts } from "@/utils/contentHelper";
+// import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Chip, Stack } from "@mui/material";
@@ -20,6 +20,7 @@ const ArticleListing = ({
 }): IArticleListingProps => {
   console.log("postContent", postContent);
   const { banner, title, summary, author, tags } = postData;
+  console.log("author", author);
   return (
     <article className="block">
       <Image

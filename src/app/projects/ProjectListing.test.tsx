@@ -17,8 +17,7 @@ describe('ProjectListing', () => {
   it('should render the project title as a link', () => {
     render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={mockProjectData}
+                projectData={mockProjectData}
         slug="test-project"
       />
     )
@@ -31,8 +30,7 @@ describe('ProjectListing', () => {
   it('should render the project summary', () => {
     render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={mockProjectData}
+                projectData={mockProjectData}
         slug="test-project"
       />
     )
@@ -45,8 +43,7 @@ describe('ProjectListing', () => {
   it('should render the banner image when provided', () => {
     render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={mockProjectData}
+                projectData={mockProjectData}
         slug="test-project"
       />
     )
@@ -67,8 +64,7 @@ describe('ProjectListing', () => {
 
     render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={projectDataWithoutBanner}
+                projectData={projectDataWithoutBanner}
         slug="test-project"
       />
     )
@@ -81,8 +77,7 @@ describe('ProjectListing', () => {
   it('should render all tags as chips', () => {
     render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={mockProjectData}
+                projectData={mockProjectData}
         slug="test-project"
       />
     )
@@ -100,8 +95,7 @@ describe('ProjectListing', () => {
 
     const { container } = render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={projectDataWithoutTags}
+                projectData={projectDataWithoutTags}
         slug="test-project"
       />
     )
@@ -112,8 +106,7 @@ describe('ProjectListing', () => {
   it('should match snapshot with full data', () => {
     const { container } = render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={mockProjectData}
+                projectData={mockProjectData}
         slug="test-project"
       />
     )
@@ -129,8 +122,7 @@ describe('ProjectListing', () => {
 
     const { container } = render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={projectDataWithoutBanner}
+                projectData={projectDataWithoutBanner}
         slug="no-banner-project"
       />
     )
@@ -146,8 +138,7 @@ describe('ProjectListing', () => {
 
     const { container } = render(
       <ProjectListing
-        projectContent="Test content"
-        projectData={projectDataWithoutTags}
+                projectData={projectDataWithoutTags}
         slug="no-tags-project"
       />
     )

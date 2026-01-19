@@ -14,7 +14,7 @@ interface IProjectContentProps {
 }
 
 const ProjectContent = ({ projectData, projectContent }): IProjectContentProps => {
-  const { banner, title, summary } = projectData;
+  const { banner, title } = projectData;
   return (
     <>
       {banner && (

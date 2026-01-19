@@ -1,6 +1,5 @@
 import { getListOfPosts, getPostContent } from "@/utils/contentHelper";
 import { Metadata } from "next";
-import Link from "next/link";
 import ArticleListing from "./ArticleListing";
 import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 
@@ -24,7 +23,7 @@ const BlogPage = () => {
               </h1>
               <p className="lg:border-b pb-4">
                 Thoughts on mastering development, design, <br />
-                and life's endless learning journey.
+                and life&apos;s endless learning journey.
               </p>
             </div>
             <div className="lg:col-span-6">

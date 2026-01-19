@@ -1,12 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import styles from "./NavigationMenu.module.scss";
-import { Button } from "@mui/material";
 import NavigationItem from "@/components/atoms/NavigationItem/NavigationItem";
 
-interface INavigationMenuProps {}
-
-const NavigationMenu = ({}): INavigationMenuProps => {
+const NavigationMenu = () => {
   return (
     <ul className={styles.navigationMenu}>
       <NavigationItem href="/projects">Projects</NavigationItem>

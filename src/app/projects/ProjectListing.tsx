@@ -6,13 +6,11 @@ import { IProjectData } from "@/interface/projects";
 import styles from "./ProjectListing.module.scss";
 
 interface IProjectListingProps {
-  projectContent: string;
   slug: string;
   projectData: IProjectData;
 }
 
 const ProjectListing = ({
-  projectContent,
   projectData,
   slug,
 }): IProjectListingProps => {

@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./SiteNavigation.module.scss";
-import { Button, useMediaQuery } from "@mui/material";
+import { Button } from "@mui/material";
 import NavigationMenu from "@/components/molecules/NavigationMenu/NavigationMenu";
 import NavigationItem from "@/components/atoms/NavigationItem/NavigationItem";
 
-interface ISiteNavigationProps {}
-
-const SiteNavigation = ({}): ISiteNavigationProps => {
+const SiteNavigation = () => {
   return (
     <header className="w-full flex flex-wrap justify-center">
       <div className="w-full max-w-screen-2l px-5 lg:px-8 mt-2">
