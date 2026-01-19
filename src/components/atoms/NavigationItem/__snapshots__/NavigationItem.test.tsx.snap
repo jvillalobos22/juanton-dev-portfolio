@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavigationItem > should match snapshot with div element 1`] = `
+<div>
+  <div
+    class="nav-item navigationItem"
+  >
+    <a
+      href="/blog"
+    >
+      Blog
+    </a>
+  </div>
+</div>
+`;
+
+exports[`NavigationItem > should match snapshot with li element 1`] = `
+<div>
+  <li
+    class="navigationItem"
+  >
+    <a
+      href="/projects"
+    >
+      Projects
+    </a>
+  </li>
+</div>
+`;

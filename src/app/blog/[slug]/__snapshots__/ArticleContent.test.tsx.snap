@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ArticleContent > should match snapshot 1`] = `
+<div>
+  <div
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="max-w-screen-lg flex flex-wrap mb-16"
+    >
+      <img
+        alt="Brush stroke image"
+        class="border articleImage"
+        data-priority="true"
+        height="1260"
+        src="/images/articles/test-banner.jpg"
+        width="2240"
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      # Test Content\\n\\nSome markdown content here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleContent > should match snapshot with code block 1`] = `
+<div>
+  <div
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="max-w-screen-lg flex flex-wrap mb-16"
+    >
+      <img
+        alt="Brush stroke image"
+        class="border articleImage"
+        data-priority="true"
+        height="1260"
+        src="/images/articles/test-banner.jpg"
+        width="2240"
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      
+# Code Example
+
+Here's some code:
+
+\`\`\`javascript
+const hello = 'world';
+console.log(hello);
+\`\`\`
+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleContent > should match snapshot with different banner 1`] = `
+<div>
+  <div
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="max-w-screen-lg flex flex-wrap mb-16"
+    >
+      <img
+        alt="Brush stroke image"
+        class="border articleImage"
+        data-priority="true"
+        height="1260"
+        src="/images/articles/different-banner.png"
+        width="2240"
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      Different article content
+    </div>
+  </div>
+</div>
+`;

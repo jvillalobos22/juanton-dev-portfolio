@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavigationMenu > should match snapshot 1`] = `
+<div>
+  <ul
+    class="navigationMenu"
+  >
+    <li
+      class="navigationItem"
+    >
+      <a
+        href="/projects"
+      >
+        Projects
+      </a>
+    </li>
+    <li
+      class="navigationItem"
+    >
+      <a
+        href="/blog"
+      >
+        Blog
+      </a>
+    </li>
+    <li
+      class="navigationItem"
+    >
+      <a
+        href="/skills"
+      >
+        Skills
+      </a>
+    </li>
+    <li
+      class="navigationItem"
+    >
+      <a
+        href="/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      class="navigationItem"
+    >
+      <a
+        href="/contact"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</div>
+`;

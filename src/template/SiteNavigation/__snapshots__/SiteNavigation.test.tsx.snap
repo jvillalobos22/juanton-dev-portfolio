@@ -1,0 +1,117 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SiteNavigation > should match snapshot 1`] = `
+<div>
+  <header
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="w-full max-w-screen-2l px-5 lg:px-8 mt-2"
+    >
+      <div
+        class="w-full flex flex-wrap lg:flex-nowrap justify-between"
+      >
+        <div
+          class="siteNavigationLogo"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="Juanton Logo"
+              class="lightModeImage"
+              data-priority="true"
+              height="2550"
+              src="/images/juanton-logo-black.png"
+              width="3300"
+            />
+            <img
+              alt="Juanton Logo"
+              class="darkModeImage"
+              data-priority="true"
+              height="2550"
+              src="/images/juanton-logo-white.png"
+              width="3300"
+            />
+          </a>
+        </div>
+        <nav
+          class="siteNavigationMenu"
+        >
+          <ul
+            class="navigationMenu"
+          >
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="/projects"
+              >
+                Projects
+              </a>
+            </li>
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="/blog"
+              >
+                Blog
+              </a>
+            </li>
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="/skills"
+              >
+                Skills
+              </a>
+            </li>
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="/about"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="/contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li
+              class="navigationItem"
+            >
+              <a
+                href="#"
+              >
+                Resume
+              </a>
+            </li>
+            <li>
+              <a
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary w-full mb-3 css-e9vf5m-MuiButtonBase-root-MuiButton-root"
+                href="https://mailchi.mp/f5a5cde72458/frontend-development-with-juanton"
+                rel="nofollower"
+                tabindex="0"
+                target="_blank"
+              >
+                Newsletter
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+`;

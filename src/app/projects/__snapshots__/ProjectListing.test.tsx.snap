@@ -1,0 +1,150 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectListing > should match snapshot with full data 1`] = `
+<div>
+  <article
+    class="block"
+  >
+    <img
+      alt="Test Project Title project image"
+      class="border projectImage"
+      data-priority="true"
+      height="1260"
+      src="/images/projects/test-project-banner.jpg"
+      width="2240"
+    />
+    <div
+      class="projectTags"
+    >
+      <div
+        class="MuiStack-root mt-4 css-niqf4j-MuiStack-root"
+      >
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            React
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            TypeScript
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            Next.js
+          </span>
+        </div>
+      </div>
+    </div>
+    <a
+      href="projects/test-project"
+    >
+      <h2
+        class="h4 mt-2 mb-2"
+      >
+        Test Project Title
+      </h2>
+    </a>
+    <p>
+      This is a test summary for the project.
+    </p>
+  </article>
+</div>
+`;
+
+exports[`ProjectListing > should match snapshot without banner 1`] = `
+<div>
+  <article
+    class="block"
+  >
+    <div
+      class="projectTags"
+    >
+      <div
+        class="MuiStack-root mt-4 css-niqf4j-MuiStack-root"
+      >
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            React
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            TypeScript
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            Next.js
+          </span>
+        </div>
+      </div>
+    </div>
+    <a
+      href="projects/no-banner-project"
+    >
+      <h2
+        class="h4 mt-2 mb-2"
+      >
+        Test Project Title
+      </h2>
+    </a>
+    <p>
+      This is a test summary for the project.
+    </p>
+  </article>
+</div>
+`;
+
+exports[`ProjectListing > should match snapshot without tags 1`] = `
+<div>
+  <article
+    class="block"
+  >
+    <img
+      alt="Test Project Title project image"
+      class="border projectImage"
+      data-priority="true"
+      height="1260"
+      src="/images/projects/test-project-banner.jpg"
+      width="2240"
+    />
+    <a
+      href="projects/no-tags-project"
+    >
+      <h2
+        class="h4 mt-2 mb-2"
+      >
+        Test Project Title
+      </h2>
+    </a>
+    <p>
+      This is a test summary for the project.
+    </p>
+  </article>
+</div>
+`;

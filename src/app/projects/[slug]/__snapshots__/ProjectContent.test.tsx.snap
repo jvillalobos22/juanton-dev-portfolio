@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectContent > should match snapshot with banner 1`] = `
+<div>
+  <div
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="max-w-screen-lg flex flex-wrap mb-16"
+    >
+      <img
+        alt="Test Project Title project banner"
+        class="border projectImage"
+        data-priority="true"
+        height="1260"
+        src="/images/projects/test-project-banner.jpg"
+        width="2240"
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      # Test Project\\n\\nSome markdown content here.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectContent > should match snapshot with code block 1`] = `
+<div>
+  <div
+    class="w-full flex flex-wrap justify-center"
+  >
+    <div
+      class="max-w-screen-lg flex flex-wrap mb-16"
+    >
+      <img
+        alt="Test Project Title project banner"
+        class="border projectImage"
+        data-priority="true"
+        height="1260"
+        src="/images/projects/test-project-banner.jpg"
+        width="2240"
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      
+# Project Code
+
+Here's some code:
+
+\`\`\`typescript
+interface Project {
+  name: string;
+  version: string;
+}
+\`\`\`
+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectContent > should match snapshot without banner 1`] = `
+<div>
+  <div
+    class="max-w-screen-md flex flex-wrap"
+  >
+    <div
+      data-testid="markdown-content"
+    >
+      # Project Without Banner\\n\\nContent here.
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ArticleListing > should match snapshot 1`] = `
+<div>
+  <article
+    class="block"
+  >
+    <img
+      alt="Brush stroke image"
+      class="border articleImage"
+      data-priority="true"
+      height="1260"
+      src="/images/articles/test-banner.jpg"
+      width="2240"
+    />
+    <div
+      class="articleTags"
+    >
+      <div
+        class="MuiStack-root mt-4 css-niqf4j-MuiStack-root"
+      >
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            React
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            TypeScript
+          </span>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            Testing
+          </span>
+        </div>
+      </div>
+    </div>
+    <a
+      href="blog/test-article"
+    >
+      <h2
+        class="h4 mt-2 mb-2"
+      >
+        Test Article Title
+      </h2>
+    </a>
+    <p>
+      This is a test summary for the article.
+    </p>
+  </article>
+</div>
+`;
+
+exports[`ArticleListing > should match snapshot with different data 1`] = `
+<div>
+  <article
+    class="block"
+  >
+    <img
+      alt="Brush stroke image"
+      class="border articleImage"
+      data-priority="true"
+      height="1260"
+      src="/images/articles/another-banner.png"
+      width="2240"
+    />
+    <div
+      class="articleTags"
+    >
+      <div
+        class="MuiStack-root mt-4 css-niqf4j-MuiStack-root"
+      >
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorSecondary MuiChip-filledSecondary mr-2 text-xs css-su3bfh-MuiChip-root"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+          >
+            JavaScript
+          </span>
+        </div>
+      </div>
+    </div>
+    <a
+      href="blog/another-article"
+    >
+      <h2
+        class="h4 mt-2 mb-2"
+      >
+        Another Article
+      </h2>
+    </a>
+    <p>
+      A different summary.
+    </p>
+  </article>
+</div>
+`;
