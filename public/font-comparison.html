@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serif Font Comparison for Body Text</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Literata:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf8;
+      color: #1a1a1a;
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .font-section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: white;
+      border: 2px solid #1a1a1a;
+      box-shadow: 4px 4px 0 #1a1a1a;
+    }
+
+    .font-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .font-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .font-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ff4d2a;
+      padding: 0.25rem 0.75rem;
+      border: 1px solid #ff4d2a;
+    }
+
+    .sample-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .sample-body {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .sample-small {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .sample-italic {
+      font-style: italic;
+    }
+
+    /* Font families */
+    .source-serif .sample-heading,
+    .source-serif .sample-body,
+    .source-serif .sample-small {
+      font-family: 'Source Serif 4', serif;
+    }
+
+    .literata .sample-heading,
+    .literata .sample-body,
+    .literata .sample-small {
+      font-family: 'Literata', serif;
+    }
+
+    .lora .sample-heading,
+    .lora .sample-body,
+    .lora .sample-small {
+      font-family: 'Lora', serif;
+    }
+
+    .crimson .sample-heading,
+    .crimson .sample-body,
+    .crimson .sample-small {
+      font-family: 'Crimson Pro', serif;
+    }
+
+    .merriweather .sample-heading,
+    .merriweather .sample-body,
+    .merriweather .sample-small {
+      font-family: 'Merriweather', serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Serif Font Comparison</h1>
+  <p class="subtitle">Evaluating readability for body text at various sizes</p>
+
+  <!-- Source Serif 4 -->
+  <div class="font-section source-serif">
+    <div class="font-header">
+      <span class="font-name">Source Serif 4</span>
+      <span class="font-tag">Recommended</span>
+    </div>
+    <h2 class="sample-heading">Building Scalable React Applications</h2>
+    <p class="sample-body">
+      When building modern web applications, component architecture plays a crucial role in maintainability. React's declarative approach allows developers to create reusable UI components that manage their own state. This paradigm shift from imperative DOM manipulation to declarative component composition has fundamentally changed how we think about building user interfaces.
+    </p>
+    <p class="sample-small">
+      The key to scalable architecture lies in proper separation of concerns. <span class="sample-italic">Each component should have a single responsibility</span>, making it easier to test, debug, and refactor. When components grow too complex, it's a signal to break them down into smaller, more focused pieces. This approach, combined with TypeScript's static typing, provides a robust foundation for large-scale applications.
+    </p>
+  </div>
+
+  <!-- Literata -->
+  <div class="font-section literata">
+    <div class="font-header">
+      <span class="font-name">Literata</span>
+      <span class="font-tag">Reading-optimized</span>
+    </div>
+    <h2 class="sample-heading">Building Scalable React Applications</h2>
+    <p class="sample-body">
+      When building modern web applications, component architecture plays a crucial role in maintainability. React's declarative approach allows developers to create reusable UI components that manage their own state. This paradigm shift from imperative DOM manipulation to declarative component composition has fundamentally changed how we think about building user interfaces.
+    </p>
+    <p class="sample-small">
+      The key to scalable architecture lies in proper separation of concerns. <span class="sample-italic">Each component should have a single responsibility</span>, making it easier to test, debug, and refactor. When components grow too complex, it's a signal to break them down into smaller, more focused pieces. This approach, combined with TypeScript's static typing, provides a robust foundation for large-scale applications.
+    </p>
+  </div>
+
+  <!-- Lora -->
+  <div class="font-section lora">
+    <div class="font-header">
+      <span class="font-name">Lora</span>
+      <span class="font-tag">Elegant</span>
+    </div>
+    <h2 class="sample-heading">Building Scalable React Applications</h2>
+    <p class="sample-body">
+      When building modern web applications, component architecture plays a crucial role in maintainability. React's declarative approach allows developers to create reusable UI components that manage their own state. This paradigm shift from imperative DOM manipulation to declarative component composition has fundamentally changed how we think about building user interfaces.
+    </p>
+    <p class="sample-small">
+      The key to scalable architecture lies in proper separation of concerns. <span class="sample-italic">Each component should have a single responsibility</span>, making it easier to test, debug, and refactor. When components grow too complex, it's a signal to break them down into smaller, more focused pieces. This approach, combined with TypeScript's static typing, provides a robust foundation for large-scale applications.
+    </p>
+  </div>
+
+  <!-- Crimson Pro -->
+  <div class="font-section crimson">
+    <div class="font-header">
+      <span class="font-name">Crimson Pro</span>
+      <span class="font-tag">Literary</span>
+    </div>
+    <h2 class="sample-heading">Building Scalable React Applications</h2>
+    <p class="sample-body">
+      When building modern web applications, component architecture plays a crucial role in maintainability. React's declarative approach allows developers to create reusable UI components that manage their own state. This paradigm shift from imperative DOM manipulation to declarative component composition has fundamentally changed how we think about building user interfaces.
+    </p>
+    <p class="sample-small">
+      The key to scalable architecture lies in proper separation of concerns. <span class="sample-italic">Each component should have a single responsibility</span>, making it easier to test, debug, and refactor. When components grow too complex, it's a signal to break them down into smaller, more focused pieces. This approach, combined with TypeScript's static typing, provides a robust foundation for large-scale applications.
+    </p>
+  </div>
+
+  <!-- Merriweather -->
+  <div class="font-section merriweather">
+    <div class="font-header">
+      <span class="font-name">Merriweather</span>
+      <span class="font-tag">Screen-optimized</span>
+    </div>
+    <h2 class="sample-heading">Building Scalable React Applications</h2>
+    <p class="sample-body">
+      When building modern web applications, component architecture plays a crucial role in maintainability. React's declarative approach allows developers to create reusable UI components that manage their own state. This paradigm shift from imperative DOM manipulation to declarative component composition has fundamentally changed how we think about building user interfaces.
+    </p>
+    <p class="sample-small">
+      The key to scalable architecture lies in proper separation of concerns. <span class="sample-italic">Each component should have a single responsibility</span>, making it easier to test, debug, and refactor. When components grow too complex, it's a signal to break them down into smaller, more focused pieces. This approach, combined with TypeScript's static typing, provides a robust foundation for large-scale applications.
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,71 +1,64 @@
-/* eslint-disable react/no-children-prop */
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import markdownStyles from "../../markdown.module.scss";
-import Image from "next/image";
-import classNames from "classnames";
-import { IProjectData } from "@/interface/projects";
-import styles from "./ProjectContent.module.scss";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import styles from "./project.module.scss";
 
 interface IProjectContentProps {
-  projectData: IProjectData;
   projectContent: string;
 }
 
-const ProjectContent = ({ projectData, projectContent }: IProjectContentProps) => {
-  const { banner, title } = projectData;
+const ProjectContent = ({ projectContent }: IProjectContentProps) => {
   return (
-    <>
-      {banner && (
-        <div className="w-full flex flex-wrap justify-center">
-          <div className="max-w-screen-lg flex flex-wrap mb-16">
-            <Image
-              src={`/images/projects/${banner}`}
-              alt={`${title} project banner`}
-              width={2240}
-              height={1260}
-              priority
-              className={classNames("border", styles.projectImage)}
-            />
-          </div>
-        </div>
-      )}
-      <div className="max-w-screen-md flex flex-wrap">
-        <ReactMarkdown
-          className={markdownStyles.markdownContent}
-          components={{
-            code({ className, children, ...props }) {
-              const match = /language-(\w+)/.exec(className || "");
+    <article className={styles.article}>
+      <ReactMarkdown
+        components={{
+          code({ className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
 
-              // If there's a language match, render as a code block with syntax highlighting
-              if (match) {
-                return (
-                  <SyntaxHighlighter
-                    style={a11yDark}
-                    language={match[1]}
-                    PreTag="div"
-                  >
-                    {String(children).replace(/\n$/, "")}
-                  </SyntaxHighlighter>
-                );
-              }
-
-              // Otherwise, render as inline code
+            if (match) {
               return (
-                <code {...props} className={className}>
-                  {children}
-                </code>
+                <SyntaxHighlighter
+                  style={oneDark}
+                  language={match[1]}
+                  PreTag="div"
+                  className={styles.codeBlock}
+                >
+                  {String(children).replace(/\n$/, "")}
+                </SyntaxHighlighter>
               );
-            },
-          }}
-        >
-          {projectContent}
-        </ReactMarkdown>
-      </div>
-    </>
+            }
+
+            return (
+              <code {...props} className={styles.inlineCode}>
+                {children}
+              </code>
+            );
+          },
+          h1: ({ children }) => <h1 className={styles.h1}>{children}</h1>,
+          h2: ({ children }) => <h2 className={styles.h2}>{children}</h2>,
+          h3: ({ children }) => <h3 className={styles.h3}>{children}</h3>,
+          h4: ({ children }) => <h4 className={styles.h4}>{children}</h4>,
+          p: ({ children }) => <p className={styles.p}>{children}</p>,
+          ul: ({ children }) => <ul className={styles.ul}>{children}</ul>,
+          ol: ({ children }) => <ol className={styles.ol}>{children}</ol>,
+          li: ({ children }) => <li className={styles.li}>{children}</li>,
+          blockquote: ({ children }) => (
+            <blockquote className={styles.blockquote}>{children}</blockquote>
+          ),
+          a: ({ href, children }) => (
+            <a href={href} className={styles.link} target="_blank" rel="noopener noreferrer">
+              {children}
+            </a>
+          ),
+          hr: () => <hr className={styles.hr} />,
+          strong: ({ children }) => <strong className={styles.strong}>{children}</strong>,
+          em: ({ children }) => <em className={styles.em}>{children}</em>,
+        }}
+      >
+        {projectContent}
+      </ReactMarkdown>
+    </article>
   );
 };
 
 export default ProjectContent;
-
