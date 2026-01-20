@@ -44,3 +44,7 @@ next-env.d.ts
 devops/bin/
 
 .vscode
+
+# planning and content documents that don't need to be committed
+content_docs
+planning

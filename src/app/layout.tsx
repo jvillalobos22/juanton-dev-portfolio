@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@mui/material/styles";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import theme from "./materialTheme";
-import { openSans, domine } from "./font";
+import { spaceGrotesk, sourceSerif, jetbrainsMono } from "./font";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Juanton Development Portfolio",
-  description: "A frontend web developer portfolio",
+  title: "Juan Villalobos — Frontend Developer",
+  description: "Building interfaces that matter. Frontend developer specializing in React, TypeScript, and modern web experiences.",
 };
 
 export default function RootLayout({
@@ -17,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${domine.variable} antialiased`}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
-        </AppRouterCacheProvider>
+      <body
+        className={`${spaceGrotesk.variable} ${sourceSerif.variable} ${jetbrainsMono.variable}`}
+      >
+        {children}
       </body>
     </html>
   );
