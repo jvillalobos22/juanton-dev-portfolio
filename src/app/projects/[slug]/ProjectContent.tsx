@@ -46,12 +46,19 @@ const ProjectContent = ({ projectContent }: IProjectContentProps) => {
             <blockquote className={styles.blockquote}>{children}</blockquote>
           ),
           a: ({ href, children }) => (
-            <a href={href} className={styles.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={href}
+              className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {children}
             </a>
           ),
           hr: () => <hr className={styles.hr} />,
-          strong: ({ children }) => <strong className={styles.strong}>{children}</strong>,
+          strong: ({ children }) => (
+            <strong className={styles.strong}>{children}</strong>
+          ),
           em: ({ children }) => <em className={styles.em}>{children}</em>,
         }}
       >
