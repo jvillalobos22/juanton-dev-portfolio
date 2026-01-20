@@ -17,7 +17,7 @@ const ArticleListing = ({
   postContent,
   postData,
   slug,
-}): IArticleListingProps => {
+}: IArticleListingProps) => {
   console.log("postContent", postContent);
   const { banner, title, summary, author, tags } = postData;
   console.log("author", author);

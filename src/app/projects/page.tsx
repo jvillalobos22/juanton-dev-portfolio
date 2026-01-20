@@ -36,7 +36,6 @@ const ProjectsPage = () => {
                         key={projectString}
                         slug={projectString}
                         projectData={projectDetails.data}
-                        projectContent={projectDetails.content}
                       />
                     );
                   })}

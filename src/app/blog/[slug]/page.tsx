@@ -4,7 +4,7 @@ import ArticleContent from "./ArticleContent";
 import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 
 interface IPostProps {
-  params: object;
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -19,8 +19,9 @@ export async function generateStaticParams() {
   }));
 }
 
-const PostPage = ({ params }): IPostProps => {
-  const content = getPostContent(params.slug);
+const PostPage = async ({ params }: IPostProps) => {
+  const { slug } = await params;
+  const content = getPostContent(slug);
 
   return (
     <div className="flex flex-wrap">

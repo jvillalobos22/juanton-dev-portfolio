@@ -1,6 +1,8 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
+import { IPostData } from "@/interface/posts";
+import { IProjectData } from "@/interface/projects";
 
 export const getListOfPosts = () => {
   const folder = path.join(process.cwd(), "posts");
@@ -11,11 +13,12 @@ export const getListOfPosts = () => {
   });
 };
 
-export const getPostContent = (slug: string) => {
+export const getPostContent = (slug: string): { data: IPostData; content: string } => {
   const file = path.join(process.cwd(), "posts", slug) + ".md";
   // TODO: add try/catch to redirect user to 404 if page fails to find file with slug
   const content = fs.readFileSync(file, "utf8");
-  return matter(content);
+  const parsed = matter(content);
+  return { data: parsed.data as IPostData, content: parsed.content };
 };
 
 export const getPageContent = (slug: string) => {
@@ -36,9 +39,10 @@ export const getListOfProjects = () => {
   });
 };
 
-export const getProjectContent = (slug: string) => {
+export const getProjectContent = (slug: string): { data: IProjectData; content: string } => {
   const file = path.join(process.cwd(), "projects", slug) + ".md";
   // TODO: add try/catch to redirect user to 404 if page fails to find file with slug
   const content = fs.readFileSync(file, "utf8");
-  return matter(content);
+  const parsed = matter(content);
+  return { data: parsed.data as IProjectData, content: parsed.content };
 };

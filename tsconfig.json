@@ -29,5 +29,5 @@
     "next-env.d.ts",
     "dist/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "devops"]
+  "exclude": ["node_modules", "devops", ".next/types/validator.ts"]
 }

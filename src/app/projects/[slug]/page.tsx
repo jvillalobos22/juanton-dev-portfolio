@@ -4,9 +4,7 @@ import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
 import { Metadata } from "next";
 
 interface IProjectProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -22,14 +20,16 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: IProjectProps): Promise<Metadata> {
-  const content = getProjectContent(params.slug);
+  const { slug } = await params;
+  const content = getProjectContent(slug);
   return {
     title: `${content.data.title} | Projects | Portfolio of Juan Villalobos`,
   };
 }
 
-const ProjectPage = ({ params }: IProjectProps) => {
-  const content = getProjectContent(params.slug);
+const ProjectPage = async ({ params }: IProjectProps) => {
+  const { slug } = await params;
+  const content = getProjectContent(slug);
 
   return (
     <div className="flex flex-wrap">

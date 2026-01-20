@@ -13,7 +13,7 @@ interface IProjectListingProps {
 const ProjectListing = ({
   projectData,
   slug,
-}): IProjectListingProps => {
+}: IProjectListingProps) => {
   const { banner, title, summary, tags } = projectData;
   return (
     <article className="block">

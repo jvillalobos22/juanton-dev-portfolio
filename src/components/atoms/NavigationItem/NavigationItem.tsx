@@ -6,7 +6,7 @@ import classNames from "classnames";
 interface INavigationItemProps {
   href: string;
   children: ReactNode;
-  element: "li" | "div";
+  element?: "li" | "div";
   className?: string;
 }
 
@@ -15,7 +15,7 @@ const NavigationItem = ({
   children,
   className,
   element = "li",
-}): INavigationItemProps => {
+}: INavigationItemProps) => {
   const linkElement: ReactNode = <Link href={href}>{children}</Link>;
   const classString = className
     ? classNames(className, styles.navigationItem)

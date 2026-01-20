@@ -13,7 +13,7 @@ interface IProjectContentProps {
   projectContent: string;
 }
 
-const ProjectContent = ({ projectData, projectContent }): IProjectContentProps => {
+const ProjectContent = ({ projectData, projectContent }: IProjectContentProps) => {
   const { banner, title } = projectData;
   return (
     <>
@@ -35,18 +35,24 @@ const ProjectContent = ({ projectData, projectContent }): IProjectContentProps =
         <ReactMarkdown
           className={markdownStyles.markdownContent}
           components={{
-            code({ inline, className, children, ...props }) {
+            code({ className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
 
-              return !inline && match ? (
-                <SyntaxHighlighter
-                  {...props}
-                  children={String(children).replace(/\n$/, "")}
-                  style={a11yDark}
-                  language={match[1]}
-                  PreTag="div"
-                />
-              ) : (
+              // If there's a language match, render as a code block with syntax highlighting
+              if (match) {
+                return (
+                  <SyntaxHighlighter
+                    style={a11yDark}
+                    language={match[1]}
+                    PreTag="div"
+                  >
+                    {String(children).replace(/\n$/, "")}
+                  </SyntaxHighlighter>
+                );
+              }
+
+              // Otherwise, render as inline code
+              return (
                 <code {...props} className={className}>
                   {children}
                 </code>
