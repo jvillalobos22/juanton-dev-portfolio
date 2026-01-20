@@ -7,7 +7,8 @@ import styles from "./projects.module.scss";
 
 export const metadata: Metadata = {
   title: "Projects — Juan Villalobos",
-  description: "A collection of frontend development projects showcasing React, TypeScript, and modern web solutions.",
+  description:
+    "A collection of frontend development projects showcasing React, TypeScript, and modern web solutions.",
 };
 
 const ProjectsPage = () => {
@@ -25,12 +26,14 @@ const ProjectsPage = () => {
             <span className={styles.labelText}>Projects</span>
           </div>
           <h1 className={styles.heroTitle}>
-            Selected<span className={styles.accent}>.</span>
+            Selected
             <br />
             Work
+            <span className={styles.accent}>.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            A curated collection of projects showcasing frontend development, design systems, and modern web solutions.
+            A curated collection of projects showcasing frontend development,
+            design systems, and modern web solutions.
           </p>
         </div>
       </section>
@@ -38,7 +41,9 @@ const ProjectsPage = () => {
       {/* Projects Grid */}
       <section className={styles.projects}>
         <div className={styles.projectsHeader}>
-          <span className={styles.projectsCount}>{projects.length} Projects</span>
+          <span className={styles.projectsCount}>
+            {projects.length} Projects
+          </span>
         </div>
 
         {projects.length > 0 ? (
