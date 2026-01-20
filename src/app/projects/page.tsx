@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
+import SiteFooter from "@/template/SiteFooter/SiteFooter";
 import styles from "./projects.module.scss";
 
 export const metadata: Metadata = {
@@ -118,15 +119,7 @@ const ProjectsPage = () => {
         )}
       </section>
 
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <span className={styles.footerLogo}>JV</span>
-          <span className={styles.footerCopy}>
-            © {new Date().getFullYear()} Juan Villalobos
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 };

@@ -3,11 +3,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
+import SiteFooter from "@/template/SiteFooter/SiteFooter";
 import styles from "./blog.module.scss";
 
 export const metadata: Metadata = {
   title: "Blog — Juan Villalobos",
-  description: "Thoughts on frontend development, React, TypeScript, and building better web experiences.",
+  description:
+    "Thoughts on frontend development, React, TypeScript, and building better web experiences.",
 };
 
 const BlogPage = () => {
@@ -25,10 +27,14 @@ const BlogPage = () => {
             <span className={styles.labelText}>Blog</span>
           </div>
           <h1 className={styles.heroTitle}>
-            Code<span className={styles.accent}>&</span>Craft
+            Code<span className={styles.accent}>&</span>
+            <br />
+            Craft
+            <span className={styles.accent}>.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Thoughts on mastering development, design, and the endless pursuit of building better interfaces.
+            Thoughts on mastering development, design, and the endless pursuit
+            of building better interfaces.
           </p>
         </div>
       </section>
@@ -115,15 +121,7 @@ const BlogPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <span className={styles.footerLogo}>JV</span>
-          <span className={styles.footerCopy}>
-            © {new Date().getFullYear()} Juan Villalobos
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 };

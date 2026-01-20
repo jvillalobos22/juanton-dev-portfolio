@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import SiteNavigation from "@/template/SiteNavigation/SiteNavigation";
+import SiteFooter from "@/template/SiteFooter/SiteFooter";
 import ProjectContent from "./ProjectContent";
 import styles from "./project.module.scss";
 
@@ -134,15 +135,7 @@ const ProjectPage = async ({ params }: IProjectProps) => {
         <ProjectContent projectContent={content} />
       </main>
 
-      {/* Site Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <span className={styles.footerLogo}>JV</span>
-          <span className={styles.footerCopy}>
-            © {new Date().getFullYear()} Juan Villalobos
-          </span>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 };

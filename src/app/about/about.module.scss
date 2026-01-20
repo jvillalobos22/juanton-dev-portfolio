@@ -1,0 +1,799 @@
+/* ============================================
+   ABOUT PAGE - NEO-BRUTALIST EDITORIAL
+   A distinctive profile page design
+   ============================================ */
+
+.page {
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+  padding: 4rem 2rem 6rem;
+  border-bottom: 1px solid var(--border);
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem 4rem;
+  }
+}
+
+.heroInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 6rem;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.heroText {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.heroEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+}
+
+.heroName {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.heroStatement {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--graphite);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--smoke);
+  }
+}
+
+.heroMeta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metaLabel {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+.metaValue {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.metaDivider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+/* Hero Image */
+.heroImage {
+  position: relative;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+  opacity: 0;
+
+  @media (max-width: 1024px) {
+    order: -1;
+    max-width: 350px;
+  }
+}
+
+.imageFrame {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--stone);
+  overflow: hidden;
+  border: 2px solid var(--foreground);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 50%,
+      rgba(255, 77, 42, 0.1) 100%
+    );
+    pointer-events: none;
+  }
+}
+
+.profilePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.imageAccent {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: -12px;
+  bottom: -12px;
+  border: 2px solid var(--accent);
+  z-index: -1;
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.intro {
+  padding: 6rem 2rem;
+  background: var(--stone);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.introInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.introMain {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.introSub {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.introParagraph {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.8;
+  color: var(--graphite);
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--smoke);
+  }
+}
+
+/* ============================================
+   SECTION LABELS (shared)
+   ============================================ */
+
+.sectionLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.sectionNum {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* ============================================
+   VALUE PROPS SECTION
+   ============================================ */
+
+.valueProps {
+  padding: 6rem 2rem;
+  border-bottom: 1px solid var(--border);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.valuePropsInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.valueCard {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--foreground);
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 var(--foreground);
+
+    .valueIcon {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+  }
+}
+
+.valueIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--foreground);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.valueTitle {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.valueDesc {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--graphite);
+  margin-bottom: 0;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--smoke);
+  }
+}
+
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+.skills {
+  padding: 6rem 2rem;
+  background: var(--stone);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.skillsInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.skillCategory {
+  background: var(--background);
+  padding: 1.5rem;
+  border: 2px solid var(--foreground);
+}
+
+.skillCategoryTitle {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skillItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.skillName {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.skillMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skillYears {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+.skillLevel {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid;
+}
+
+.levelExpert {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.levelProficient {
+  border-color: var(--foreground);
+  color: var(--foreground);
+}
+
+.levelCertified {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* ============================================
+   METRICS SECTION
+   ============================================ */
+
+.metrics {
+  padding: 6rem 2rem;
+  border-bottom: 1px solid var(--border);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.metricsInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.metricCard {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--stone);
+  border: 2px solid var(--foreground);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 var(--accent);
+  }
+}
+
+.metricValue {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.metricLabel {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.metricContext {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* ============================================
+   PHILOSOPHY SECTION
+   ============================================ */
+
+.philosophy {
+  padding: 6rem 2rem;
+  background: var(--stone);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.philosophyInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.philosophyCard {
+  padding: 2.5rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--foreground);
+
+    .philosophyNum {
+      color: var(--accent);
+    }
+  }
+}
+
+.philosophyNum {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.philosophyTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.philosophyDesc {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--graphite);
+  margin-bottom: 0;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--smoke);
+  }
+}
+
+/* ============================================
+   CERTIFICATIONS SECTION
+   ============================================ */
+
+.certifications {
+  padding: 6rem 2rem;
+  border-bottom: 1px solid var(--border);
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.certificationsInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.certCard {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--accent);
+
+    .certYear {
+      background: var(--accent);
+      color: white;
+    }
+  }
+}
+
+.certYear {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--foreground);
+  color: var(--background);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.certName {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.certIssuer {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta {
+  padding: 8rem 2rem;
+  background: var(--stone);
+
+  @media (max-width: 768px) {
+    padding: 5rem 1.5rem;
+  }
+}
+
+.ctaInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaHeading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.ctaDesc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--graphite);
+  margin-bottom: 3rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--smoke);
+  }
+}
+
+.ctaActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--accent);
+
+    svg {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  svg {
+    transition: transform 0.2s ease;
+  }
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--accent);
+
+    svg {
+      transform: translateX(4px);
+    }
+  }
+
+  svg {
+    transition: transform 0.2s ease;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

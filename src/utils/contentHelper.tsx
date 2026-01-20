@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { IPostData } from "@/interface/posts";
 import { IProjectData } from "@/interface/projects";
 import { IHomeContent } from "@/interface/homeContent";
+import { IAboutPageContent } from "@/interface/aboutContent";
 
 export const getListOfPosts = () => {
   const folder = path.join(process.cwd(), "posts");
@@ -53,4 +54,11 @@ export const getHomeContent = (): { data: IHomeContent; content: string } => {
   const content = fs.readFileSync(file, "utf8");
   const parsed = matter(content);
   return { data: parsed.data as IHomeContent, content: parsed.content };
+};
+
+export const getAboutContent = (): { data: IAboutPageContent; content: string } => {
+  const file = path.join(process.cwd(), "pages", "about.md");
+  const content = fs.readFileSync(file, "utf8");
+  const parsed = matter(content);
+  return { data: parsed.data as IAboutPageContent, content: parsed.content };
 };

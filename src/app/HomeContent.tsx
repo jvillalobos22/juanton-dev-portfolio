@@ -30,6 +30,7 @@ interface HomeContentProps {
 
 const HomeContent = ({ projects, posts, content }: HomeContentProps) => {
   const [currentSection, setCurrentSection] = useState(0);
+  const [showScrollButton, setShowScrollButton] = useState(true);
 
   // Handle body scroll lock for snap scrolling on non-mobile
   useEffect(() => {
@@ -75,6 +76,18 @@ const HomeContent = ({ projects, posts, content }: HomeContentProps) => {
 
     return () => observer.disconnect();
   }, []);
+
+  // Hide scroll button after user scrolls past the first section
+  useEffect(() => {
+    if (currentSection > 0) {
+      setShowScrollButton(false);
+    }
+  }, [currentSection]);
+
+  const handleScrollClick = () => {
+    document.querySelector('[data-section="1"]')?.scrollIntoView({ behavior: "smooth" });
+    setShowScrollButton(false);
+  };
 
   return (
     <div className={styles.page}>
@@ -138,11 +151,27 @@ const HomeContent = ({ projects, posts, content }: HomeContentProps) => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className={styles.scrollIndicator}>
-          <span className={styles.scrollText}>Scroll</span>
-          <div className={styles.scrollLine}></div>
-        </div>
+        {/* Scroll Button */}
+        {showScrollButton && (
+          <button
+            className={styles.scrollButton}
+            onClick={handleScrollClick}
+            aria-label="Scroll down to see more content"
+          >
+            <span className={styles.scrollButtonText}>Scroll Down</span>
+            <svg
+              className={styles.scrollButtonIcon}
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M12 5v14M19 12l-7 7-7-7" />
+            </svg>
+          </button>
+        )}
       </section>
 
       {/* About Section */}

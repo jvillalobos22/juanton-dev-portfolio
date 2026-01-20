@@ -24,14 +24,16 @@ const SiteNavigation = () => {
 
   return (
     <>
-      <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+      <header
+        className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
+      >
         <nav className={styles.nav}>
           {/* Logo / Brand */}
           <Link href="/" className={styles.logo}>
             <span className={styles.logoMark}>JV</span>
             <span className={styles.logoText}>
               <span className={styles.logoName}>Juan Villalobos</span>
-              <span className={styles.logoRole}>Frontend Developer</span>
+              <span className={styles.logoRole}>Full-Stack Developer</span>
             </span>
           </Link>
 
@@ -76,7 +78,9 @@ const SiteNavigation = () => {
       </header>
 
       {/* Mobile Menu Overlay */}
-      <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.open : ""}`}>
+      <div
+        className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.open : ""}`}
+      >
         <div className={styles.mobileMenuContent}>
           <div className={styles.mobileMenuHeader}>
             <span className={styles.label}>Navigation</span>

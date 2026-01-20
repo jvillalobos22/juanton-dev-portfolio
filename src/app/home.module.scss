@@ -254,54 +254,82 @@
   font-weight: 500;
 }
 
-/* Scroll Indicator */
-.scrollIndicator {
+/* Scroll Button */
+.scrollButton {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--foreground);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInBounce 0.8s ease forwards, gentleBounce 2s ease-in-out 1s infinite;
+
+  &:hover {
+    background: var(--foreground);
+    color: var(--background);
+    transform: translateX(-50%) translateY(-4px);
+    box-shadow: 0 4px 0 var(--accent);
+
+    .scrollButtonIcon {
+      animation: none;
+      transform: translateY(2px);
+    }
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(0);
+    box-shadow: none;
+  }
 
   @media (max-width: 768px) {
     display: none;
   }
 }
 
-.scrollText {
+.scrollButtonText {
   font-family: var(--font-mono);
   font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--muted);
 }
 
-.scrollLine {
-  width: 60px;
-  height: 1px;
-  background: var(--muted);
-  position: relative;
-  overflow: hidden;
+.scrollButtonIcon {
+  animation: arrowBounce 1.5s ease-in-out infinite;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 100%;
-    background: var(--foreground);
-    animation: scrollPulse 2s ease-in-out infinite;
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 }
 
-@keyframes scrollPulse {
-  0%,
-  100% {
-    transform: translateX(-20px);
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(60px);
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
   }
 }
 
