@@ -1,4 +1,67 @@
-## Hi, I'm Juan Villalobos aka @JuantonMusic 👋
+---
+hero:
+  roleLabel: "Full-Stack Developer"
+  titleLines:
+    - "Building"
+    - "interfaces"
+  subtitle: "Crafting thoughtful digital experiences with React, TypeScript, and a relentless focus on performance and accessibility."
+  coordinates:
+    latitude: "37.7749° N"
+    longitude: "122.4194° W"
+  currentPosition:
+    label: "Currently"
+    text: "Lead Engineer @ IBM"
+  heroImage:
+    src: "/images/headshot-square-1-transparent.png"
+    alt: "Juan Villalobos"
+
+about:
+  sectionNum: "01"
+  sectionTitle: "About"
+  leadParagraph: "I'm Juan, a full-stack developer with 11+ years of experience building scalable web applications for enterprise clients. I believe great interfaces are invisible—they just work."
+  bodyParagraph: "Currently leading frontend architecture for our  clients at IBM, where I focus on design systems, performance optimization, and mentoring the next generation of developers. When I'm not coding, you'll find me creating content about modern web development."
+  stats:
+    - number: "11+"
+      label: "Years Experience"
+    - number: "50+"
+      label: "Projects Delivered"
+    - number: "10M+"
+      label: "Users Impacted"
+
+work:
+  sectionNum: "02"
+  sectionTitle: "Selected Work"
+  ctaText: "View All Projects"
+  emptyStateMessage: "Projects coming soon..."
+
+blog:
+  sectionNum: "03"
+  sectionTitle: "Latest Writing"
+  ctaText: "Read All Posts"
+  cardLinkText: "Read Article"
+
+contact:
+  sectionNum: "04"
+  sectionTitle: "Get in Touch"
+  headingLines:
+    - "Let's build something"
+    - "great together."
+  description: "Available for freelance projects, consulting, and interesting conversations about software development."
+  ctaText: "Start a Conversation"
+  email: "juan@juanvillalobos.me"
+  socialLinks:
+    - platform: "linkedin"
+      url: "https://www.linkedin.com/in/juanavillalobos/"
+      label: "LinkedIn"
+    - platform: "youtube"
+      url: "https://www.youtube.com/@juantonmusic"
+      label: "YouTube"
+    - platform: "github"
+      url: "https://github.com/jvillalobos22"
+      label: "GitHub"
+---
+
+## Hi, I'm Juan Villalobos aka @JuantonMusic
 
 I'm a Lead Software Engineer who bridges the gap between design thinking and technical implementation. As a full-stack developer with a passion for frontend excellence, I specialize in building enterprise-scale React.js and Node.js applications that put user experience first. At IBM, I've shaped the design direction for multi-squad teams, leading design thinking workshops and driving agile development cycles that transform complex requirements into elegant solutions. By implementing efficient sprint processes and mentoring practices, I've helped teams increase their velocity by over 300% while delivering high-quality software. These solutions power critical healthcare infrastructure supporting over 50,000 providers and managing more than $120 billion in annual Medicaid claims for the state of California.
 

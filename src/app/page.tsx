@@ -1,10 +1,17 @@
 import { Metadata } from "next";
-import { getListOfPosts, getPostContent, getListOfProjects, getProjectContent } from "@/utils/contentHelper";
+import {
+  getListOfPosts,
+  getPostContent,
+  getListOfProjects,
+  getProjectContent,
+  getHomeContent,
+} from "@/utils/contentHelper";
 import HomeContent from "./HomeContent";
 
 export const metadata: Metadata = {
   title: "Juan Villalobos — Frontend Developer",
-  description: "Building interfaces that matter. Frontend developer specializing in React, TypeScript, and modern web experiences.",
+  description:
+    "Building interfaces that matter. Frontend developer specializing in React, TypeScript, and modern web experiences.",
 };
 
 const Home = () => {
@@ -35,7 +42,11 @@ const Home = () => {
     };
   });
 
-  return <HomeContent projects={projects} posts={posts} />;
+  const { data: homeContent } = getHomeContent();
+
+  return (
+    <HomeContent projects={projects} posts={posts} content={homeContent} />
+  );
 };
 
 export default Home;
