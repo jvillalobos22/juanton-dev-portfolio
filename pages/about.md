@@ -12,8 +12,8 @@ hero:
 
 intro:
   heading: "Not just a developer."
-  subheading: "A builder of systems."
-  paragraph: "I'm a Senior Frontend Engineer and technical leader with 10+ years building enterprise applications, including 3+ years architecting multi-tenant healthcare systems. Most frontend engineers don't have design systems expertise. Most designers don't code at this level. I bridge both worlds."
+  subheading: "An architect of systems."
+  paragraph: "I'm an Engineering Lead with 10+ years building enterprise applications, including 3+ years architecting healthcare systems at scale. Most engineers don't have design systems expertise. Most designers don't architect at this level. I bridge both worlds—and I'm adding AI to that toolkit."
 
 valueProps:
   - icon: "bridge"

@@ -9,7 +9,7 @@ import styles from "./projects.module.scss";
 export const metadata: Metadata = {
   title: "Projects — Juan Villalobos",
   description:
-    "A collection of frontend development projects showcasing React, TypeScript, and modern web solutions.",
+    "Enterprise systems, design architectures, and AI-powered solutions. A decade of building software that scales teams and serves millions.",
 };
 
 const ProjectsPage = () => {
@@ -39,8 +39,8 @@ const ProjectsPage = () => {
             <span className={styles.accent}>.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            A curated collection of projects showcasing frontend development,
-            design systems, and modern web solutions.
+            Enterprise platforms, design systems, and AI-powered solutions. Each
+            project represents systems thinking at scale.
           </p>
         </div>
       </section>

@@ -33,7 +33,7 @@ const SiteNavigation = () => {
             <span className={styles.logoMark}>JV</span>
             <span className={styles.logoText}>
               <span className={styles.logoName}>Juan Villalobos</span>
-              <span className={styles.logoRole}>Full-Stack Developer</span>
+              <span className={styles.logoRole}>Engineering Lead</span>
             </span>
           </Link>
 

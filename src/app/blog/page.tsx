@@ -9,7 +9,7 @@ import styles from "./blog.module.scss";
 export const metadata: Metadata = {
   title: "Blog — Juan Villalobos",
   description:
-    "Thoughts on frontend development, React, TypeScript, and building better web experiences.",
+    "Writing on frontend architecture, design systems, team leadership, and building AI-enhanced products. Lessons from a decade of engineering.",
 };
 
 const BlogPage = () => {
@@ -33,8 +33,8 @@ const BlogPage = () => {
             <span className={styles.accent}>.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Thoughts on mastering development, design, and the endless pursuit
-            of building better interfaces.
+            Lessons from a decade of building enterprise systems—on
+            architecture, leadership, and what it takes to scale teams.
           </p>
         </div>
       </section>
