@@ -3,115 +3,232 @@
 exports[`SiteNavigation > should match snapshot 1`] = `
 <div>
   <header
-    class="w-full flex flex-wrap justify-center"
+    class="header "
   >
-    <div
-      class="w-full max-w-screen-2l px-5 lg:px-8 mt-2"
+    <nav
+      class="nav"
     >
-      <div
-        class="w-full flex flex-wrap lg:flex-nowrap justify-between"
+      <a
+        class="logo"
+        href="/"
       >
-        <div
-          class="siteNavigationLogo"
+        <span
+          class="logoMark"
+        >
+          JV
+        </span>
+        <span
+          class="logoText"
+        >
+          <span
+            class="logoName"
+          >
+            Juan Villalobos
+          </span>
+          <span
+            class="logoRole"
+          >
+            Engineering Lead
+          </span>
+        </span>
+      </a>
+      <ul
+        class="navList"
+      >
+        <li
+          class="navItem"
         >
           <a
-            href="/"
+            class="navLink"
+            href="/projects"
           >
-            <img
-              alt="Juanton Logo"
-              class="lightModeImage"
-              data-priority="true"
-              height="2550"
-              src="/images/juanton-logo-black.png"
-              width="3300"
-            />
-            <img
-              alt="Juanton Logo"
-              class="darkModeImage"
-              data-priority="true"
-              height="2550"
-              src="/images/juanton-logo-white.png"
-              width="3300"
-            />
+            <span
+              class="navNum"
+            >
+              01
+            </span>
+            <span
+              class="navLabel"
+            >
+              Projects
+            </span>
           </a>
-        </div>
-        <nav
-          class="siteNavigationMenu"
+        </li>
+        <li
+          class="navItem"
         >
-          <ul
-            class="navigationMenu"
+          <a
+            class="navLink"
+            href="/blog"
           >
-            <li
-              class="navigationItem"
+            <span
+              class="navNum"
             >
-              <a
-                href="/projects"
-              >
-                Projects
-              </a>
-            </li>
-            <li
-              class="navigationItem"
+              02
+            </span>
+            <span
+              class="navLabel"
             >
-              <a
-                href="/blog"
-              >
-                Blog
-              </a>
-            </li>
-            <li
-              class="navigationItem"
+              Blog
+            </span>
+          </a>
+        </li>
+        <li
+          class="navItem"
+        >
+          <a
+            class="navLink"
+            href="/about"
+          >
+            <span
+              class="navNum"
             >
-              <a
-                href="/skills"
-              >
-                Skills
-              </a>
-            </li>
-            <li
-              class="navigationItem"
+              03
+            </span>
+            <span
+              class="navLabel"
             >
-              <a
-                href="/about"
-              >
-                About
-              </a>
-            </li>
-            <li
-              class="navigationItem"
+              About
+            </span>
+          </a>
+        </li>
+      </ul>
+      <a
+        class="cta"
+        href="mailto:juan@juanvillalobos.me"
+      >
+        <span>
+          Let's Talk
+        </span>
+        <svg
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+        >
+          <path
+            d="M7 17L17 7M17 7H7M17 7V17"
+          />
+        </svg>
+      </a>
+      <button
+        aria-expanded="false"
+        aria-label="Toggle menu"
+        class="menuToggle "
+      >
+        <span
+          class="menuBar"
+        />
+        <span
+          class="menuBar"
+        />
+      </button>
+    </nav>
+  </header>
+  <div
+    class="mobileMenu "
+  >
+    <div
+      class="mobileMenuContent"
+    >
+      <div
+        class="mobileMenuHeader"
+      >
+        <span
+          class="label"
+        >
+          Navigation
+        </span>
+      </div>
+      <ul
+        class="mobileNavList"
+      >
+        <li
+          class="mobileNavItem"
+          style="animation-delay: 0s;"
+        >
+          <a
+            class="mobileNavLink"
+            href="/projects"
+          >
+            <span
+              class="mobileNavNum"
             >
-              <a
-                href="/contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li
-              class="navigationItem"
+              01
+            </span>
+            <span
+              class="mobileNavLabel"
             >
-              <a
-                href="#"
-              >
-                Resume
-              </a>
-            </li>
-            <li>
-              <a
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary w-full mb-3 css-e9vf5m-MuiButtonBase-root-MuiButton-root"
-                href="https://mailchi.mp/f5a5cde72458/frontend-development-with-juanton"
-                rel="nofollower"
-                tabindex="0"
-                target="_blank"
-              >
-                Newsletter
-              </a>
-            </li>
-          </ul>
-        </nav>
+              Projects
+            </span>
+          </a>
+        </li>
+        <li
+          class="mobileNavItem"
+          style="animation-delay: 0.1s;"
+        >
+          <a
+            class="mobileNavLink"
+            href="/blog"
+          >
+            <span
+              class="mobileNavNum"
+            >
+              02
+            </span>
+            <span
+              class="mobileNavLabel"
+            >
+              Blog
+            </span>
+          </a>
+        </li>
+        <li
+          class="mobileNavItem"
+          style="animation-delay: 0.2s;"
+        >
+          <a
+            class="mobileNavLink"
+            href="/about"
+          >
+            <span
+              class="mobileNavNum"
+            >
+              03
+            </span>
+            <span
+              class="mobileNavLabel"
+            >
+              About
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div
+        class="mobileMenuFooter"
+      >
+        <a
+          class="mobileCta"
+          href="mailto:juan@juanvillalobos.me"
+        >
+          Let's Talk
+        </a>
+        <div
+          class="mobileCoords"
+        >
+          <span
+            class="label"
+          >
+            Location
+          </span>
+          <span>
+            San Francisco, CA
+          </span>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
 </div>
 `;

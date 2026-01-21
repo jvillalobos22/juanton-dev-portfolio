@@ -50,7 +50,7 @@ const SiteNavigation = () => {
           </ul>
 
           {/* CTA Button */}
-          <Link href="mailto:hello@juanton.dev" className={styles.cta}>
+          <Link href="mailto:juan@juanvillalobos.me" className={styles.cta}>
             <span>Let&apos;s Talk</span>
             <svg
               width="16"
@@ -105,7 +105,7 @@ const SiteNavigation = () => {
           </ul>
           <div className={styles.mobileMenuFooter}>
             <Link
-              href="mailto:hello@juanton.dev"
+              href="mailto:juan@juanvillalobos.me"
               className={styles.mobileCta}
               onClick={() => setIsMobileMenuOpen(false)}
             >
