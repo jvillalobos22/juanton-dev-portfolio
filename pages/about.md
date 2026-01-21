@@ -2,8 +2,8 @@
 hero:
   eyebrow: "About"
   name: "Juan Villalobos"
-  title: "Full-Stack Developer & UI/UX Leader"
-  statement: "I bridge the gap between design thinking and technical implementation—building systems that enable teams to ship reliably at scale."
+  title: "Engineering Lead & Frontend Architect"
+  statement: "I bridge design and engineering to build frontend systems that scale teams—and I'm expanding into AI-enhanced product development."
   location: "San Francisco Bay Area"
   experience: "10+ Years"
   profileImage:
@@ -113,9 +113,9 @@ metrics:
   - value: "50K+"
     label: "Users Served"
     context: "Healthcare providers"
-  - value: "$120M+"
-    label: "Transactions"
-    context: "Annual claims processed"
+  - value: "$120B+"
+    label: "Claims Processed"
+    context: "Annual Medicaid transactions"
 
 certifications:
   - name: "AWS Certified AI Practitioner"
@@ -142,23 +142,88 @@ philosophy:
       description: "The best standards spread through demonstration, not mandates. I lead by building things worth adopting."
 
 cta:
-  heading: "Let's build something meaningful."
-  description: "I'm looking for mission-driven opportunities where I can have direct product impact and work closely with design and product teams."
+  heading: "Let's build what's next."
+  description: "I'm seeking Staff-level engineering roles at mission-driven companies where I can shape product direction and build AI-enhanced experiences."
   buttonText: "Get in Touch"
   email: "juan@juanvillalobos.me"
 ---
 
 ## The Journey
 
+I'm a frontend architect and engineering leader who's spent a decade building the systems that help teams ship faster. My superpower? I bridge the gap between what designers envision and what's technically possible—while never losing sight of the user.
+
 I started my career in 2014 building responsive websites for small businesses. What began as simple client work evolved into a passion for understanding how great interfaces come together—not just the code, but the design thinking, user research, and systematic approaches that make software truly work for people.
 
 At IBM Consulting, I've had the privilege of working on systems that genuinely matter. The California Medi-Cal Provider Portal serves 50,000+ healthcare providers managing benefits for some of the state's most vulnerable populations. Building for healthcare taught me that good enough isn't good enough—when your users are managing patient care, every detail matters.
 
-## What Sets Me Apart
+---
 
-I'm not your typical frontend engineer. While many developers specialize in either technical implementation or design collaboration, I've deliberately built expertise in both. I can facilitate a design thinking workshop in the morning, architect a component library in the afternoon, and mentor junior developers through complex TypeScript patterns before the day ends.
+## Current: Engineering Lead, IBM Consulting
 
-This combination is rare, and it's valuable. Companies don't just need people who can write code—they need people who can bridge the gap between what designers envision and what's technically possible, while advocating for the user every step of the way.
+Leading a 7-person development team on California's Medi-Cal modernization—one of the largest healthcare IT projects in the state.
+
+### Architecture & Systems
+- Define frontend patterns, component libraries, and development standards adopted organization-wide
+- Architect enterprise-scale solutions using React, TypeScript, GraphQL, and Next.js
+- Champion atomic design principles and build Storybook-based design systems
+- Drive performance optimization (40% reduction in load times) and accessibility compliance (WCAG 2.1)
+
+### Leadership & Enablement
+- Scaled team from 2 to 7 engineers while increasing velocity 312%
+- Built systems that 40+ engineers across the organization now build upon
+- Mentor frontend engineers through pair programming and technical code reviews
+- Facilitate design thinking workshops and cross-squad collaboration
+
+### Business Impact
+- Lead frontend architecture for a system serving 50,000+ healthcare providers
+- Enable processing of $120B+ in annual Medicaid claims with 99.9% uptime
+- Drive test coverage from 40% to 85%, reducing production incidents
+- Bridge design and engineering to translate complex requirements into scalable solutions
+
+---
+
+## What I'm Building Next
+
+I'm focused on expanding my skillset into AI-enhanced product development:
+
+- **AI-Powered Features:** Integrating LLMs, embeddings, and intelligent agents into user-facing products
+- **System Architecture:** Deepening expertise in distributed systems and platform design
+- **Technical Leadership:** Moving toward Staff+ roles where I can shape product direction, not just implement it
+
+I believe the next generation of great products will be AI-native—and I'm positioning myself to build them.
+
+---
+
+## How I Think About Building
+
+### The Architecture Mindset
+
+Every project I lead starts with the same questions:
+
+- What patterns will help the team move faster six months from now?
+- Where does design intent get lost in translation, and how do we prevent that?
+- What's the right balance between moving fast and building foundations?
+- How do we measure success beyond just shipping features?
+
+### What Sets Senior Engineers Apart
+
+The jump from mid-level to senior isn't about knowing more frameworks. It's about:
+
+- **Thinking in systems:** Components are easy. The hard part is building architectures that scale with your team.
+- **Enabling others:** Your impact multiplies when 40 engineers build on your foundations.
+- **Bridging worlds:** The best solutions come from understanding both design intent and technical constraints.
+- **Making tradeoffs explicit:** Every decision has costs. Senior engineers name them clearly.
+
+### For Engineers Growing Their Careers
+
+I've been where you are. The path from developer to technical leader isn't always clear. A few things I've learned:
+
+- Own the design process, don't just implement what's handed to you
+- Build relationships across functions—design, product, backend
+- Document your decisions and the reasoning behind them
+- Find opportunities to mentor, even before you have the title
+
+---
 
 ## What I'm Looking For
 

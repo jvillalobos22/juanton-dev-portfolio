@@ -183,6 +183,7 @@
 
 .heroLine {
   display: block;
+  font-size: clamp(3rem, 8vw, 6rem);
 }
 
 .heroSubtitle {
