@@ -109,24 +109,51 @@
   }
 }
 
-.heroCoord {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Location Badge */
+.locationBadge {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding: 0.625rem 1rem;
+  background: var(--stone);
+  border: 1px solid var(--border);
+  width: fit-content;
+  margin-left: auto;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
 
   @media (max-width: 768px) {
     display: none;
   }
 }
 
-.coordLabel {
+.locationIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.locationText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.locationName {
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.locationCoords {
   font-family: var(--font-mono);
-  font-size: 0.625rem;
+  font-size: 0.5625rem;
   color: var(--muted);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 .heroText {
@@ -269,7 +296,9 @@
   border: 2px solid var(--foreground);
   cursor: pointer;
   transition: all 0.3s ease;
-  animation: fadeInBounce 0.8s ease forwards, gentleBounce 2s ease-in-out 1s infinite;
+  animation:
+    fadeInBounce 0.8s ease forwards,
+    gentleBounce 2s ease-in-out 1s infinite;
 
   &:hover {
     background: var(--foreground);
@@ -316,7 +345,8 @@
 }
 
 @keyframes gentleBounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) translateY(0);
   }
   50% {
@@ -325,7 +355,8 @@
 }
 
 @keyframes arrowBounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

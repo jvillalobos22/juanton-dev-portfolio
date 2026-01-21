@@ -14,6 +14,12 @@ export const metadata: Metadata = {
 
 const ProjectsPage = () => {
   const projects = getListOfProjects();
+  const sortedProjects = projects.sort((a, b) => {
+    const aDate = new Date(getProjectContent(a.replace(".md", "")).data.date);
+    const bDate = new Date(getProjectContent(b.replace(".md", "")).data.date);
+
+    return bDate.getTime() - aDate.getTime();
+  });
 
   return (
     <div className={styles.page}>
@@ -49,7 +55,7 @@ const ProjectsPage = () => {
 
         {projects.length > 0 ? (
           <div className={styles.projectsGrid}>
-            {projects.map((project, index) => {
+            {sortedProjects.map((project, index) => {
               const slug = project.replace(".md", "");
               const { data } = getProjectContent(slug);
 
